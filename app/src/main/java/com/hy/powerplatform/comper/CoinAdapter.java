@@ -51,7 +51,6 @@ public class CoinAdapter extends CommonAdapter<ShengChanYYList.ResultBean> {
                 .setText(R.id.tvQNTQ, data.getTqnum())
                 .setText(R.id.tvHB, data.getHb())
                 .setText(R.id.tvNDLJ, data.getYearCount());
-//                .setCommonClickListener(commonClickListener);
         if (data.getTb()!=null&&!data.getTb().equals("")&&data.getTb().contains("%")){
             if (Double.valueOf(data.getTb().substring(0, data.getTb().indexOf("%")))>0){
                 holder.setTextColorRed(R.id.tvTB);
