@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/linearlayout_radius"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="执行人:"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvZXR"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="状    态:"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="标    题:"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvCKBT"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llContent"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="内    容:"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:maxLines="2"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTime"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="时    间:"
+                android:gravity="center"
+                android:textColor="@color/ziti"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/ziti"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnCK"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="详情"
+                android:layout_margin="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/linearlayout_colore_radius"/>
+
+            <Button
+                android:id="@+id/btnCB"
+                android:visibility="gone"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="催办"
+                android:layout_margin="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/linearlayout_colore_radius"/>
+            <Button
+                android:id="@+id/btnSH"
+                android:visibility="gone"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="审核"
+                android:layout_margin="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/linearlayout_colore_radius"/>
+            <Button
+                android:id="@+id/btnXG"
+                android:visibility="gone"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="同意修改"
+                android:layout_margin="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/linearlayout_colore_radius"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

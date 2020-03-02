@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:backgroundTint="@color/color_bg_selected">
+        <com.hy.powerplatform.my_utils.utils.XCRoundImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/color_bg_selected"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/logo1"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myinform"
+        style="@style/linerlayout"
+        android:background="@color/whith">
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/myinform"
+            android:layout_centerVertical="true"/>
+        <TextView
+            style="@style/TextView"
+            android:text="@string/my_name"
+            android:gravity="center_vertical"
+            android:textColor="@color/xiaohei" />
+        <TextView
+            android:id="@+id/tvmyName"
+            style="@style/TextView"
+            android:gravity="center"
+            android:textColor="@color/xiaohei" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shouye"/>
+    <LinearLayout
+        android:id="@+id/studyArchives"
+        style="@style/linerlayout"
+        android:background="@color/whith">
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/quit"
+            android:layout_centerVertical="true"/>
+        <TextView
+            style="@style/TextView"
+            android:text="@string/my_status"
+            android:gravity="center_vertical"
+            android:textColor="@color/xiaohei" />
+        <TextView
+            android:id="@+id/tvMyStatus"
+            style="@style/TextView"
+            android:gravity="center"
+            android:textColor="@color/xiaohei" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shouye"/>
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="@string/quit_app"
+        android:background="@drawable/linearlayout_colore_radius"/>
+
+</LinearLayout>

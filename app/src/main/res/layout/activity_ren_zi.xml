@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shouye"
+    tools:context="com.hy.powerplatform.oa_flow.activity.RenZiActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="人资管理">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <include
+        android:id="@+id/inNoContent"
+        layout="@layout/no_content"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/flDriverAssess"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llDriverAssess"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item12" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="驾驶员考核" />
+            <TextView
+                android:id="@+id/tvDriverAssess"
+                style="@style/numTextView" />
+            <ImageView
+                style="@style/ycGO" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flChuCai"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llChuCai"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item13" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="出差审批" />
+            <TextView
+                android:id="@+id/tvChuCai"
+                style="@style/numTextView" />
+            <ImageView
+                style="@style/ycGO"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flLeave"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llLeave"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item1" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="请假流程" />
+            <TextView
+                android:id="@+id/tvLeave"
+                style="@style/numTextView" />
+            <ImageView style="@style/ycGO"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flEntry"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llEntry"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item3" />
+
+            <TextView
+                android:id="@+id/tvEntry"
+                style="@style/numTextView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/ycTextView"
+                android:text="驾驶员入职流程" />
+
+            <ImageView style="@style/ycGO"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flwoekEnter"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llwoekEnter"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item11" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="员工入职"/>
+            <ImageView style="@style/ycGO" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

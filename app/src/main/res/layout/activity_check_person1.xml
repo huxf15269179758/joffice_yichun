@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whith"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.business_inspect.newactivity.CheckPersonActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="人员列表"
+        app:header_title_right="完成">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/linearlayout_radius">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:background="@null" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/shousuo" />
+    </FrameLayout>
+
+    <View style="@style/HourLine" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+        <TextView
+            android:id="@+id/rbPerson"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/linearlayout_colore_bigradius"
+            android:layout_margin="40dp"
+            android:layout_gravity="bottom|right"
+            android:text="部门\n经理"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+</LinearLayout>

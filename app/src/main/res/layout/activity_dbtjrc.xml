@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.duban.activity.DBTJRCActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="添加日程">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/oaTextView"
+            android:text="紧急程度:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+        <RadioGroup
+            style="@style/oaEditText"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb1"
+                style="@style/RadionButton1"
+                android:text="一般"
+                android:checked="true"
+                android:paddingRight="10dp"/>
+            <RadioButton
+                android:id="@+id/rb2"
+                style="@style/RadionButton1"
+                android:text="重要"
+                android:paddingRight="10dp"/>
+            <RadioButton
+                android:id="@+id/rb3"
+                style="@style/RadionButton1"
+                android:text="紧急"
+                android:paddingRight="10dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/oaTextView"
+            android:text="概要 *:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+        <EditText
+            android:id="@+id/etGY"
+            style="@style/oaEditText"
+            android:hint="请填写概要"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/oaTextView"
+            android:text="内容 *:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+        <EditText
+            android:id="@+id/etContent"
+            style="@style/oaEditText"
+            android:hint="请填写内容"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="分配给:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvFPR"
+            style="@style/oaEditText"
+            android:hint="请选择分配人"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/oaTextView"
+            android:text="任务类型:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+        <RadioGroup
+            style="@style/oaEditText"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbType1"
+                style="@style/RadionButton1"
+                android:text="限期任务"
+                android:checked="true"
+                android:paddingRight="10dp"/>
+            <RadioButton
+                android:id="@+id/rbType2"
+                style="@style/RadionButton1"
+                android:text="非限期任务"
+                android:paddingRight="10dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="开始时间:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvStartTime"
+            style="@style/oaEditText" />
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="结束时间:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvEndTime"
+            style="@style/oaEditText" />
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/oaTextView"
+            android:text="显示方式:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+        <RadioGroup
+            style="@style/oaEditText"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbFS1"
+                style="@style/RadionButton1"
+                android:text="任务中显示"
+                android:checked="true"
+                android:paddingRight="10dp"/>
+            <RadioButton
+                android:id="@+id/rbFS2"
+                style="@style/RadionButton1"
+                android:text="日程任务显示"
+                android:paddingRight="10dp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="45dp"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:background="@drawable/linearlayout_colore_radius"/>
+
+</LinearLayout>

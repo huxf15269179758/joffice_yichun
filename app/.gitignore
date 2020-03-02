@@ -1,0 +1,11 @@
+/build
+/libs
+/.idea
+/.gradle
+/gradle
+/app/build
+/app/libs
+/src/test
+/src/androidTest
+/src/main/assets
+/multiple-images-selector

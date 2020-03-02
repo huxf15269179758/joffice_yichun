@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+            <!--时间选择器-->
+            <LinearLayout
+                style="@style/linerlayout"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_height="match_parent"
+                    style="@style/TextView"
+                    android:text="@string/inspect_time"/>
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    style="@style/TextView" />
+                <ImageView
+                    style="@style/TextView"
+                    android:visibility="invisible"
+                    android:src="@drawable/time_select"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <!--选择检查车辆-->
+            <LinearLayout
+                style="@style/linerlayout"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/TextView"
+                    android:layout_weight="0.8"
+                    android:text="@string/select_inspect_car"/>
+                <EditText
+                    android:id="@+id/etSelectCar"
+                    style="@style/TextView"
+                    android:background="@drawable/linearlayout"
+                    android:hint="@string/plerse_write_keyword"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/bg_do_botttom"/>
+                <ImageView
+                    android:id="@+id/imCarSelect"
+                    style="@style/TextView"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/time_select"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <!--区段-->
+            <LinearLayout
+                style="@style/linerlayout"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/TextView"
+                    android:layout_weight="0.8"
+                    android:text="@string/select_inspect_address"/>
+                <EditText
+                    android:id="@+id/etSelectAddress"
+                    style="@style/TextView"
+                    android:background="@drawable/linearlayout"
+                    android:hint="@string/please_write_address"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/bg_do_botttom"/>
+                <ImageView
+                    style="@style/TextView"
+                    android:visibility="invisible"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/time_select"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+
+            <ExpandableListView
+                android:id="@+id/expandableListView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+            </ExpandableListView>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:layout_margin="45dp"
+                android:textColor="@color/white"
+                android:background="@drawable/linearlayout_colore_radius"
+                android:text="@string/commit"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

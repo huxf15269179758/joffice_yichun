@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.oa_flow.fragment.FragmentCarData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="申请人: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etPerson"
+                    style="@style/oaEditText"
+                    android:hint="请填写申请人"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <include layout="@layout/select_person"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="会签事项:"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etShiXiang"
+                    android:hint="请填写会签事项"
+                    style="@style/textWrite"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="附件:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvData"
+                    android:hint="点击选择附件"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/shouye"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeaderW"
+                    style="@style/oaTextView"
+                    android:text="会签事项:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvLeader"
+                    style="@style/oaEditText"
+                    android:hint="请填写会签事项"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader1W"
+                    style="@style/oaTextView"
+                    android:text="总经理意见:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvLeader1"
+                    style="@style/oaEditText"
+                    android:hint="请填写总经理意见"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader2W"
+                    style="@style/oaTextView"
+                    android:text="董事长意见:"/>
+
+                <TextView
+                    android:id="@+id/tvLeader2"
+                    style="@style/oaEditText"
+                    android:hint="请填写董事长意见" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvDate1"
+                    style="@style/oaEditText"
+                    android:hint="请填写维修人员意见"/>
+            </LinearLayout>
+            <View style="@style/line"
+                android:layout_marginBottom="45dp"></View>
+
+
+            <Button
+                android:id="@+id/btnUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="45dp"
+                android:background="@drawable/linearlayout_colore_radius"
+                android:text="提交"
+                android:gravity="center"
+                android:textColor="@color/whith"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

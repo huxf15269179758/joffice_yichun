@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="@string/staff_infor">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+     <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:background="#C4E1FF"
+        android:orientation="horizontal" > 
+       <TextView  
+           android:id="@+id/busHidden"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:text="@string/col_busCode"
+           android:textSize="18sp" />
+       <TextView  
+           android:id="@+id/driverHidden"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:text="@string/col_driver" android:visibility="gone"
+           android:textSize="18sp" />
+         <TextView  
+           android:id="@+id/lineHidden"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:text="@string/col_line" android:visibility="gone"
+           android:textSize="18sp" />
+         <TextView  
+           android:id="@+id/luduiHidden"
+          android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:gravity="center"
+           android:layout_weight="1"
+           android:text="@string/col_ludui" android:visibility="gone"
+           android:textSize="18sp" />
+        <TextView 
+            android:layout_width="match_parent"
+           android:layout_height="40dp" 
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/col_plan" 
+            android:textSize="18sp" /> 
+        <TextView 
+            android:layout_width="match_parent"
+           android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/col_real" 
+            android:textSize="18sp" /> 
+            <!-- 
+        <TextView 
+            android:layout_width="0dip" 
+            android:layout_weight="1"
+            android:layout_height="30dp" 
+            android:text="@string/col_planMile" 
+            android:textSize="15sp" /> 
+        <TextView 
+            android:layout_width="0dip"
+            android:layout_weight="1" 
+            android:layout_height="30dp" 
+            android:text="@string/col_realMile" 
+            android:textSize="15sp" /> 
+             -->
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tripListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+
+    </LinearLayout>

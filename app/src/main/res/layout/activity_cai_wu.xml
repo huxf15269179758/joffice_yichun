@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shouye"
+    tools:context="com.hy.powerplatform.oa_flow.activity.CaiWuActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="财务管理">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <include
+        android:id="@+id/inNoContent"
+        layout="@layout/no_content"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/flBill"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llBill"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item8" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="借款单" />
+
+            <TextView
+                android:id="@+id/tvBill"
+                style="@style/numTextView" />
+
+            <ImageView style="@style/ycGO" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flFuKuanLiuCheng"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llFuKuanLiuCheng"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+               style="@style/ycImageView"
+                android:src="@drawable/flow_item14" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="付款程序" />
+            <ImageView style="@style/ycGO" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFuKuanLiuCheng"
+            style="@style/numTextView" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flContractPay"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llContractPay"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item5" />
+
+            <TextView
+               style="@style/ycTextView"
+                android:text="合同付款" />
+            <TextView
+                android:id="@+id/tvContractPay"
+                style="@style/numTextView" />
+            <ImageView
+                style="@style/ycGO" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/flGHPay"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llGHPay"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item7" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="工会付款" />
+
+            <TextView
+                android:id="@+id/tvGHPay"
+                style="@style/numTextView" />
+
+            <ImageView style="@style/ycGO" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/flGHSingle"
+        style="@style/ycFrameLayout">
+        <LinearLayout
+            android:id="@+id/llGHSingle"
+            style="@style/ycLinearLayout">
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item22"
+                android:layout_gravity="center"/>
+            <TextView
+                style="@style/ycTextView"
+                android:text="工会合同签订"/>
+            <TextView
+                android:id="@+id/tvGHSingle"
+                style="@style/numTextView"/>
+            <ImageView style="@style/ycGO"/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/flZgs"
+        style="@style/ycFrameLayout">
+        <LinearLayout
+            android:id="@+id/llzgs"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                style="@style/ycImageView"
+                android:layout_gravity="center"
+                android:src="@drawable/flow_item10" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="子公司付款流程"/>
+            <TextView
+                android:id="@+id/tvzga"
+                style="@style/numTextView"/>
+            <ImageView style="@style/ycGO"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:src="@drawable/flow_item18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="合同签订"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvContractSign"
+            style="@style/numTextView" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:src="@drawable/flow_item19" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="物品采购"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvGoodsPurchase"
+            style="@style/numTextView" />
+    </FrameLayout>
+
+</LinearLayout>

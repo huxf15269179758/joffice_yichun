@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.duban.activity.DBGuanLiActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="督办管理"
+        app:header_title_right="查询">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/start_time" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/shouye" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/end_time" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/HourLine"></View>
+
+    <LinearLayout
+        android:id="@+id/llTiaoJian"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/shouye"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="查询条件"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/go"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <View style="@style/HourLine"></View>
+
+    <LinearLayout
+        android:id="@+id/llTiaoJian1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/oaTextView"
+                android:text="任务类型: " />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/shouye" />
+            <Spinner
+                android:id="@+id/spinnerType"
+                style="@style/oaEditText" />
+        </LinearLayout>
+        <View style="@style/line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/oaTextView"
+                android:text="任务名称: " />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/shouye" />
+            <EditText
+                android:id="@+id/etName"
+                style="@style/oaEditText"
+                android:hint="请填写任务名称关键字"/>
+        </LinearLayout>
+        <View style="@style/line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/oaTextView"
+                android:text="督办人: "/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:background="@color/shouye"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/etDBPerson"
+                android:hint="请填写督办人"
+                style="@style/oaEditText"/>
+        </LinearLayout>
+        <View style="@style/line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/oaTextView"
+                android:text="执行人: " />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/shouye" />
+
+            <EditText
+                android:id="@+id/etZXPerson"
+                style="@style/oaEditText"
+                android:hint="请填写执行人" />
+        </LinearLayout>
+        <View style="@style/line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/oaTextView"
+                android:text="完成时间: "/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:background="@color/shouye"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tvOverTime"
+                android:hint="完成时间"
+                style="@style/oaEditText"/>
+            <TextView
+                android:id="@+id/tvOverTime1"
+                android:hint="完成时间"
+                android:visibility="gone"
+                style="@style/oaEditText"/>
+        </LinearLayout>
+        <View style="@style/line"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/oaTextView"
+                android:text="状态: " />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/shouye" />
+            <Spinner
+                android:id="@+id/spinnerZT"
+                style="@style/oaEditText" />
+        </LinearLayout>
+        <View style="@style/line"></View>
+    </LinearLayout>
+
+    <com.example.refreshview.CustomRefreshView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.refreshview.CustomRefreshView>
+
+</LinearLayout>

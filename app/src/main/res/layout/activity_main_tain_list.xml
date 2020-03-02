@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="车辆维修">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/shouye"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            style="@style/fragment0_radionbutton"
+            android:drawableTop="@drawable/ic_cheliangwx"
+            android:text="车辆维修" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:background="@color/shouye"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/fragment0_radionbutton"
+            android:drawableTop="@drawable/ic_weixiupd"
+            android:text="维修派单" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:background="@color/shouye"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            style="@style/fragment0_radionbutton"
+            android:drawableTop="@drawable/ic_weixiuxm"
+            android:text="维修项目" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:background="@color/shouye"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            style="@style/fragment0_radionbutton"
+            android:drawableTop="@drawable/ic_weixiull"
+            android:text="维修领料" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/shouye"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb5"
+            style="@style/fragment0_radionbutton"
+            android:drawableTop="@drawable/ic_weixiusy"
+            android:text="维修审验" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/shouye"/>
+
+        <RadioButton
+            android:id="@+id/rb6"
+            style="@style/fragment0_radionbutton"
+            android:drawableTop="@drawable/ic_weixiuwc"
+            android:text="维修完成" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/shouye"/>
+        <RadioButton
+            android:visibility="invisible"
+            style="@style/fragment0_radionbutton"
+            android:text="维修项目" />
+        <RadioButton
+            android:visibility="invisible"
+            style="@style/fragment0_radionbutton"
+            android:text="维修领料" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/shouye"/>
+
+</LinearLayout>

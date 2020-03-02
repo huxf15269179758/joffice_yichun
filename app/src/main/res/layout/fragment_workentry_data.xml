@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="姓名: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvPerson"
+                    android:hint="请填写入职人姓名"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="联系电话: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:hint="请填写联系电话"
+                    android:inputType="number"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="身份证号: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etIdNum"
+                    android:hint="请填写身份证号"
+                    android:digits="0123456789qwertyuioplkjhgfdsazxcvbnm"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="性别: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etSex"
+                    style="@style/oaEditText"
+                    android:hint="请输入性别"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="准驾车型:*"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etCarType"
+                    android:hint="请填写准驾车型"
+                    style="@style/oaEditText"/>
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/spinnerCarType"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent"/>
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/spinnerCarType1"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent"/>
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/spinnerCarType2"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="分配部门:*"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvDepartment"
+                    android:hint="请选择分配部门"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="附件:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvData"
+                    android:hint="点击选择附件"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="营运管理部:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <Spinner
+                    android:id="@+id/spinnerYY"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent">
+                </Spinner>
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+                style="@style/line"></View>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="人力资源部:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <Spinner
+                    android:id="@+id/spinnerRZ"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent">
+                </Spinner>
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+                style="@style/line"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/shouye"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLeaderW"
+                    style="@style/oaTextView"
+                    android:text="接收部门:" />
+
+                <TextView
+                    style="@style/oaEditText"
+                    android:hint="接收部门意见" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader1W"
+                    style="@style/oaTextView"
+                    android:text="财务审计部:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvLeader"
+                    style="@style/oaEditText"
+                    android:hint="财务审计部意见">
+                </TextView>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader2W"
+                    style="@style/oaTextView"
+                    android:text="信息技术部:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tvLeader2"
+                    style="@style/oaTextView"
+                    android:layout_weight="2.5"
+                    android:hint="登记工号信息" />
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeaderNum"
+                    style="@style/oaTextView"
+                    android:text="员工编号:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/tvLeaderNumW"
+                    style="@style/oaTextView"
+                    android:layout_weight="2.5"
+                    android:hint="员工编号信息" />
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader3W"
+                    style="@style/oaTextView"
+                    android:text="春城通科技:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvLeader3"
+                    style="@style/oaTextView"
+                    android:hint="办理IC卡"
+                    android:layout_weight="2.5"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <Button
+                android:id="@+id/btnUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="45dp"
+                android:background="@drawable/linearlayout_colore_radius"
+                android:text="提交"
+                android:gravity="center"
+                android:textColor="@color/whith"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

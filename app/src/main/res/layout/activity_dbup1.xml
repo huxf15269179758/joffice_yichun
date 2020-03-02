@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="督办">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="督办类型:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+        <TextView
+            android:id="@+id/tvType"
+            style="@style/oaEditText"
+            android:hint="请填写任务" />
+        <Spinner
+            android:visibility="gone"
+            android:id="@+id/spinnerType"
+            style="@style/oaEditText" />
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="督办任务:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <EditText
+            android:id="@+id/etRW"
+            style="@style/oaEditText"
+            android:hint="请填写任务"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="计划完成时间:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvJHWCSJ"
+            style="@style/oaEditText" />
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:layout_height="75dp"
+            android:text="督办内容:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <EditText
+            android:id="@+id/etContent"
+            style="@style/oaEditText"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:hint="请填写督办内容"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="督办人:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvDBR"
+            style="@style/oaEditText"
+            android:hint="王少云,唐根六,晏慧锋"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="执行人:"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvZXR"
+            style="@style/oaEditText"
+            android:hint="请选择执行人"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="发布时间:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvFBSJ"
+            style="@style/oaEditText" />
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="联系人:" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvLXR"
+            style="@style/oaEditText"
+            android:hint="请选择联系人"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/oaTextView"
+            android:text="附件:"
+            android:layout_height="45dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvFJ"
+            style="@style/oaEditText"
+            android:padding="5dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/linearlayout_colore_radius"
+        android:layout_margin="45dp"
+        android:text="确认提交"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

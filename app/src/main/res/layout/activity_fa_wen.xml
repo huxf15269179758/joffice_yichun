@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shouye"
+    tools:context="com.hy.powerplatform.oa_flow.activity.FaWenActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="发文管理">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <include
+        android:id="@+id/inNoContent"
+        layout="@layout/no_content"
+        android:visibility="gone" />
+
+    <FrameLayout style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:id="@+id/llOutMessage"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item4" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="发文流程" />
+
+            <TextView
+                android:id="@+id/tvOutMessage"
+                style="@style/numTextView" />
+
+            <ImageView style="@style/ycGO" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        style="@style/ycFrameLayout">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llCompMessage"
+            style="@style/ycLinearLayout">
+
+            <ImageView
+                style="@style/ycImageView"
+                android:src="@drawable/flow_item4" />
+
+            <TextView
+                style="@style/ycTextView"
+                android:text="公司信息发布" />
+
+            <TextView
+                android:id="@+id/tvCompMessage"
+                style="@style/numTextView" />
+
+            <ImageView style="@style/ycGO" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

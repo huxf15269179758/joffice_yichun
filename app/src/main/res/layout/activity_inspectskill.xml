@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_inspectstarte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.hy.powerplatform.business_inspect.activity.InspectStarteActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="@string/inspect_skill">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <RadioGroup
+        android:id="@+id/radionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbPass"
+            android:checked="true"
+            style="@style/main_tab_style"
+            android:textSize="16dp"
+            android:text="@string/pass" />
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/shouye"/>
+        <RadioButton
+            android:id="@+id/rbNoPass"
+            style="@style/main_tab_style"
+            android:textSize="16dp"
+            android:text="@string/no_pass" />
+    </RadioGroup>
+
+    <View
+        style="@style/line"/>
+
+    <com.hy.powerplatform.news.myview.CustomViewPager
+        android:id="@+id/customViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

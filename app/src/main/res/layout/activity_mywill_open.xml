@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.oa_flow.metting.activity.MyWillOpenListActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="@string/oaflow_metting_rb1"
+        app:header_title_right="@string/query">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            style="@style/oaTextView"
+            android:text="会议室: *" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+        <EditText
+            android:id="@+id/etType"
+            style="@style/oaEditText"
+            android:hint="请输入会议室名称"/>
+    </LinearLayout>
+    <View style="@style/line"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/start_time" />
+
+            <TextView
+                android:id="@+id/tvStartTime"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:minWidth="45dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="开始时间"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/tvStartTime1"
+                android:layout_width="match_parent"
+                android:minWidth="45dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="开始时间"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/shouye" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/end_time" />
+
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:visibility="gone"
+                android:minWidth="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="结束时间"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/tvEndTime1"
+                android:minWidth="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="结束时间"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/shouye"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/llNoContent"
+            layout="@layout/no_content"
+            android:visibility="gone"/>
+        <com.example.refreshview.CustomRefreshView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.example.refreshview.CustomRefreshView>
+    </LinearLayout>
+
+</LinearLayout>

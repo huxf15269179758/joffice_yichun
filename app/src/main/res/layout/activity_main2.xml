@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.login.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_bg_selected"
+        android:orientation="horizontal">
+
+        <com.hy.powerplatform.my_utils.myViews.Header
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:header_is_left_iv_visiable="false"
+            app:header_title="@string/logo_small_text">
+        </com.hy.powerplatform.my_utils.myViews.Header>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                style="@style/RadionButton"
+                android:checked="true"
+                android:drawableTop="@drawable/btn_01_bg"
+                android:text="首页" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                style="@style/RadionButton"
+                android:drawableTop="@drawable/btn_02_bg"
+                android:text="个人中心" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

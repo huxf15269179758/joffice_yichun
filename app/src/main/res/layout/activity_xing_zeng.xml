@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shouye"
+    tools:context="com.hy.powerplatform.oa_flow.activity.XingZengActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="行政管理">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <include
+        android:id="@+id/inNoContent"
+        layout="@layout/no_content"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llRepair"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="66dp"
+                        android:layout_gravity="center"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:src="@drawable/flow_item21" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="报修项目"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/tvRepair"
+                        style="@style/numTextView" />
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"
+                        android:src="@drawable/go" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flEMaintain"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llEMaintain"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item16" />
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="电子维修" />
+                        <TextView
+                            android:id="@+id/tvEMaintain"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flCarVideo"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llCarVideo"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item9"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="车载视频" />
+                        <TextView
+                            android:id="@+id/tvCarVideo"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flDorm"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llDorm"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item17"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="员工宿舍"/>
+                        <TextView
+                            android:id="@+id/tvDorm"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flNewGC"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llNewGC"
+                        style="@style/ycLinearLayout">
+
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item17" />
+
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="工程量增加" />
+                        <TextView
+                            android:id="@+id/tvNewGC"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flGCCheck"
+                   style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llGCCheck"
+                        style="@style/ycLinearLayout">
+
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item22" />
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="建设工程变更" />
+                        <TextView
+                            android:id="@+id/tvGCCheck"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flCompliain"
+                   style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llCompliain"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item16"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="投诉转办"/>
+                        <TextView
+                            android:id="@+id/tvCompliain"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flJZGC"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llJZGC"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item16"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="新建工程"/>
+                        <TextView
+                            android:id="@+id/tvJZGC"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flInstall"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llInstall"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item22"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="安装改造"/>
+                        <TextView
+                            android:id="@+id/tvInstall"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flReceiveDinner"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llReceiveDinner"
+                       style="@style/ycLinearLayout">
+
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item15" />
+
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="接待用餐"/>
+                        <TextView
+                            android:id="@+id/tvReceiveDinner"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flContractSign"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llContractSign"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item18"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="合同签订"/>
+                        <TextView
+                            android:id="@+id/tvContractSign"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/flAppeal"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llAppeal"
+                        style="@style/ycLinearLayout">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item7" />
+
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="请示上报"/>
+                        <TextView
+                            android:id="@+id/tvAppeal"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flCarSafe"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llCarSafe"
+                        style="@style/ycLinearLayout">
+
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item11" />
+
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="车辆保险"/>
+                        <TextView
+                            android:id="@+id/tvCarSafe"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flSaferS"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llSaferS"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item7"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="商业险"/>
+                        <TextView
+                            android:id="@+id/tvSaferS"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/flSaferY"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llSaferY"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item7"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="意外险"/>
+                        <TextView
+                            android:id="@+id/tvSaferY"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:visibility="gone"
+                    android:id="@+id/flCar"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llCar"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item2"
+                            android:layout_gravity="center"/>
+                        <TextView
+                           style="@style/ycTextView"
+                            android:text="用车流程"/>
+                        <TextView
+                            android:id="@+id/tvCar"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:visibility="gone"
+                    android:id="@+id/flHuiQian"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llHuiQian"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item12"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="公文会签"/>
+                        <TextView
+                            android:id="@+id/tvHuiQian"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:visibility="gone"
+                    android:id="@+id/flGHSingle"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                        android:id="@+id/llGHSingle"
+                        style="@style/ycLinearLayout">
+                        <ImageView
+                            style="@style/ycImageView"
+                            android:src="@drawable/flow_item22"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            style="@style/ycTextView"
+                            android:text="工会合同签订"/>
+                        <TextView
+                            android:id="@+id/tvGHSingle"
+                            style="@style/numTextView"/>
+                        <ImageView style="@style/ycGO"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/ycFrameLayout"
+                    style="@style/ycFrameLayout">
+                    <LinearLayout
+                    android:id="@+id/llCompMessage"
+                    style="@style/ycLinearLayout">
+
+                    <ImageView
+                        style="@style/ycImageView"
+                        android:src="@drawable/flow_item4" />
+
+                    <TextView
+                        style="@style/ycTextView"
+                        android:text="公司信息发布" />
+
+                    <TextView
+                        android:id="@+id/tvCompMessage"
+                        style="@style/numTextView" />
+
+                    <ImageView style="@style/ycGO" />
+                </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

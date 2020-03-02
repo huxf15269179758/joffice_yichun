@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.oa_flow.activity.MyWillDoActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_is_right_tv_visiable="true"
+        app:header_title_right="查询条件"
+        app:header_title="历史流程">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <include
+        android:id="@+id/inNoContent"
+        layout="@layout/no_content"
+        android:visibility="gone">
+    </include>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/shouye"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvAnQuan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="查询条件"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/go"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llTerm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="状态: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:hint="请填写事项名称"
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="事项名称: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etData"
+                    android:hint="请填写事项名称"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="创建人: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etPerson"
+                    android:hint="请填写创建人"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:hint="请填写开始时间"
+                    android:text="开始时间: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvStartTime"
+                    style="@style/oaEditText"
+                    android:hint="请填写开始时间"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="结束时间: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvEndTime"
+                    android:hint="请填写结束时间"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <Button
+                android:id="@+id/btnFound"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_margin="45dp"
+                android:text="查询"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.refreshview.CustomRefreshView
+        android:id="@id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.refreshview.CustomRefreshView>
+
+</LinearLayout>

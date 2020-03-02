@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/mIvBanner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/banner1" />
+
+            <!--功能列表分割线-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mIvBanner"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"></android.support.v7.widget.RecyclerView>
+            <View
+                style="@style/HourLine"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="更新历史"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <!--跑马灯-->
+                <com.sunfusheng.marqueeview.MarqueeView
+                    android:id="@+id/tvUpData"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    app:mvAnimDuration="1000"
+                    app:mvDirection="bottom_to_top"
+                    app:mvInterval="3000"
+                    app:mvTextColor="@color/colorAccent"
+                    app:mvTextSize="16sp"
+                    android:layout_marginLeft="17dp"
+                    app:mvSingleLine="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="收入成本"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_bg_selected"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <View style="@style/HourLine"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewYY"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </android.support.v7.widget.RecyclerView>
+            <View
+                style="@style/HourLine"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/llZB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="指标显示"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <View style="@style/HourLine"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewZB"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="登陆统计(最近一周)"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/tvLoginMore"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="更多"
+                    android:textColor="@color/color_bg_selected"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/background_user"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="排名"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E6E6E6" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="35dp"
+                    android:text="用户名"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E6E6E6" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="35dp"
+                    android:text="登录次数"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="430dp">
+            </android.support.v7.widget.RecyclerView>
+
+            <View style="@style/HourLine"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="流程统计"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/tvDepartment"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:text="请选择部门"
+                    android:textColor="@color/color_bg_selected"
+                    android:textSize="16dp" />
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/spDepartment"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/color_bg_selected"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/mBarChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

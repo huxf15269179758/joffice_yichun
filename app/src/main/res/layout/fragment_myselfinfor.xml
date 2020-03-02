@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/linearlayout"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+        <TextView
+            style="@style/TextView"
+            android:text="@string/new_infor"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tvNum"
+            style="@style/TextView"
+            android:text="共5条"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="@string/more_news"
+            android:background="@color/color_bg_selected"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" />
+
+</LinearLayout>

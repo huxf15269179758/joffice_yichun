@@ -1,0 +1,621 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.oa_flow.fragment.FragmentCarData">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_is_right_tv_visiable="true"
+        app:header_title_right="@string/nullify"
+        app:header_title="车辆保险审批详情">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="时间: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvTime"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="申请人: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvPerson"
+                    android:hint="请填写申请人"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="申请部门: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvDpartment"
+                    android:hint="请填写申请部门"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="车牌号"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvOutCarNo1"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvOutCarNo2"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvOutCarNo3"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvOutCarNo4"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvOutCarNo5"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="保险公司"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeSepart1"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeSepart2"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeSepart3"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeSepart4"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeSepart5"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="险种"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeType1"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeType2"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeType3"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeType4"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeType5"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="金额"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeMoney1"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeMoney2"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeMoney3"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeMoney5"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeMoney4"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="起保日期"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate1"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate2"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate3"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate4"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate5"
+                            style="@style/oaTextView1"
+                            android:layout_height="55dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"
+                        android:layout_marginRight="8dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/shouye"
+                android:layout_marginRight="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="合计金额: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvAllMoney"
+                    android:hint="请填写合计金额"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:id="@+id/llData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="附件:"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvData"
+                    android:hint="点击选择附件"
+                    style="@style/textWrite"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/shouye"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb1"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone"/>
+
+                    <CheckBox
+                        android:id="@+id/cb2"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/cb3"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cb4"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/cb5"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/cb6"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/rb1"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/rb2"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/rb3"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/rb4"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/rb5"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+
+                    <CheckBox
+                        android:id="@+id/rb6"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeaderW"
+                    style="@style/oaTextView"
+                    android:text="部门领导:"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvLeader"
+                    style="@style/textWrite"
+                    android:hint="部门领导意见"/>
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etLeader"
+                    style="@style/textWrite"
+                    android:hint="部门领导意见"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader1W"
+                    style="@style/oaTextView"
+                    android:text="分管领导:"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvLeader1"
+                    android:hint="分管领导意见"
+                    style="@style/textWrite"/>
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etLeader1"
+                    style="@style/textWrite"
+                    android:hint="分管领导意见"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader2W"
+                    style="@style/oaTextView2"
+                    android:text="总经理:"
+                    android:layout_gravity="center_vertical"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvLeader2"
+                    android:hint="总经理意见"
+                    style="@style/textWrite2"/>
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etLeader2"
+                    style="@style/textWrite2"
+                    android:hint="总经理意见"/>
+            </LinearLayout>
+            <View style="@style/line"
+                android:layout_marginBottom="45dp"></View>
+
+            <include layout="@layout/get_person"></include>
+            <Button
+                android:id="@+id/btnUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="45dp"
+                android:background="@drawable/linearlayout_colore_radius"
+                android:text="提交"
+                android:gravity="center"
+                android:textColor="@color/whith"/>
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/linearlayout_colore_radius"
+                android:text="流程审批信息"
+                android:gravity="center"
+                android:textColor="@color/whith"/>
+            <android.support.v7.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

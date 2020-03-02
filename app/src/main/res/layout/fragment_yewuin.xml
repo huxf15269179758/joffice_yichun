@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+            <!--时间选择器-->
+            <LinearLayout
+                style="@style/linerlayout"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_height="match_parent"
+                    style="@style/TextView"
+                    android:text="@string/inspect_time"/>
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    style="@style/TextView" />
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/imTimeSelect"
+                    style="@style/TextView"
+                    android:src="@drawable/time_select"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <!--选择检查车辆-->
+            <LinearLayout
+                style="@style/linerlayout"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/TextView"
+                    android:layout_weight="0.8"
+                    android:text="@string/select_inspect_car"/>
+                <EditText
+                    android:id="@+id/etSelectCar"
+                    style="@style/TextView"
+                    android:background="@drawable/linearlayout"
+                    android:hint="@string/plerse_write_keyword"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/bg_do_botttom"/>
+                <ImageView
+                    android:id="@+id/imCarSelect"
+                    style="@style/TextView"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/time_select"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+            <!--洗车工-->
+            <LinearLayout
+                style="@style/linerlayout"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/TextView"
+                    android:layout_weight="0.8"
+                    android:text="@string/clean_car"/>
+                <EditText
+                    android:id="@+id/etSelectClean"
+                    style="@style/TextView"
+                    android:background="@drawable/linearlayout"
+                    android:hint="@string/plerse_write_keyword"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/bg_do_botttom"/>
+                <ImageView
+                    android:id="@+id/imCleanSelect"
+                    style="@style/TextView"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/time_select"/>
+            </LinearLayout>
+            <!--检查人-->
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/linerlayout"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+                <TextView
+                    style="@style/TextView"
+                    android:layout_weight="0.8"
+                    android:text="@string/inspect_work"/>
+                <EditText
+                    android:id="@+id/etSelectWork"
+                    style="@style/TextView"
+                    android:background="@drawable/linearlayout"
+                    android:hint="@string/plerse_write_keyword"
+                    android:paddingLeft="4dp"
+                    android:layout_weight="2"
+                    android:textColor="@color/bg_do_botttom"/>
+                <ImageView
+                    android:id="@+id/imWorkSelect"
+                    style="@style/TextView"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/time_select"/>
+            </LinearLayout>
+            <include layout="@layout/line"/>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_marginLeft="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+            <include layout="@layout/line"/>
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/etInspectRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/linearlayout"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:hint="请输入备注..."
+                android:textSize="14dp"
+                android:lineSpacingExtra="7dp"
+                android:gravity="top"/>
+
+            <Button
+                android:id="@+id/btn"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/linearlayout_colore_radius"
+                android:text="@string/commit"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

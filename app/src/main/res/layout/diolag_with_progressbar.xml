@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/relationLayout"
+    android:background="@color/white"
+    android:visibility="gone"
+    android:layout_marginTop="45dp"
+    android:backgroundTint="@color/small_none_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hy.powerplatform.staff_work.myview.RoundProgressBarWidthNumber
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="16dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/size"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/size"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_marginRight="16dp"
+        android:text="0mb"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/handle_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/progressBar"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/speed"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="0kb/s"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:text="开始" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:text="删除任务" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/speed_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/handle_bar"
+        />
+
+</RelativeLayout>

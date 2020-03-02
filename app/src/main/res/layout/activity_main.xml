@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.hy.powerplatform.my_utils.myViews.Header
+       android:id="@+id/header"
+       app:header_is_left_iv_visiable="false"
+       app:header_title="@string/app_name"
+       style="@style/Heander">
+   </com.hy.powerplatform.my_utils.myViews.Header>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <com.hy.powerplatform.my_utils.myViews.NoScrollViewPager
+          android:id="@+id/mViewPage"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:paddingBottom="50dp">
+      </com.hy.powerplatform.my_utils.myViews.NoScrollViewPager>
+
+      <RadioGroup
+          android:id="@+id/mRadionGroup"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:orientation="horizontal">
+         <RadioButton
+             android:id="@+id/rbHomePage"
+             style="@style/activity_radionbutton"
+             android:checked="true"
+             android:drawableTop="@drawable/btn_01_bg"
+             android:text="@string/home_page">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/rbPhoneList"
+             style="@style/activity_radionbutton"
+             android:drawableTop="@drawable/btn_02_bg"
+             android:text="@string/phone_list">
+         </RadioButton>
+         <RadioButton
+             android:id="@+id/rbMyEvent"
+             style="@style/activity_radionbutton"
+             android:drawableTop="@drawable/btn_03_bg"
+             android:text="@string/my_personal">
+         </RadioButton>
+      </RadioGroup>
+   </RelativeLayout>
+
+</LinearLayout>

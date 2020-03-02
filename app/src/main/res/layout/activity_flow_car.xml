@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.oa_flow.activity.FlowCarActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:header_title="审批单">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <RadioGroup
+        android:background="#FFFFFF"
+        android:id="@+id/radionGroup"
+        android:layout_marginTop="10dp"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp">
+        <RadioButton
+            android:id="@+id/rbData"
+            android:checked="true"
+            style="@style/main_tab_style"
+            android:textSize="16dp"
+            android:text="@string/write_data" />
+        <RadioButton
+            android:id="@+id/rbList"
+            style="@style/main_tab_style"
+            android:textSize="16dp"
+            android:text="@string/flow_list" />
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rbWillDo"
+            style="@style/main_tab_style"
+            android:textSize="16dp"
+            android:text="@string/flow_willdo" />
+    </RadioGroup>
+    <View
+        style="@style/line"
+        android:layout_margin="2dp"/>
+    <com.hy.powerplatform.my_utils.myViews.NoScrollViewPager
+        android:id="@+id/noScrollViewPager"
+        android:background="#FFFFFF"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

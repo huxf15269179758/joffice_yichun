@@ -1,0 +1,327 @@
+<resources>
+    <string name="back">一键退出</string>
+    <string name="lastone_question">已经是最后一题</string>
+    <string name="no_fuction">功能开发中</string>
+    <string name="cannot_isnull">用户信息不能为空</string>
+    <string name="new_App">已经是最新版本</string>
+    <string name="loading">加载中</string>
+    <string name="get_data_fail">获取数据失败</string>
+    <string name="get_data">获取数据中</string>
+    <string name="up_data">提交数据中</string>
+    <string name="first_download">请先下载试题</string>
+    <string name="pelease_select">请选择</string>
+    <string name="download_old">试题已下载</string>
+    <string name="download_ok">下载完成</string>
+    <string name="no_question">暂无报考题目</string>
+    <string name="remimber_password">记住密码</string>
+    <string name="selector_reach_max_image_hint">您已经选择%d张图片了!</string>
+    <string name="tip_take_photo">拍摄照片</string>
+    <string name="msg_no_camera">无法启动相机!</string>
+    <string name="camera_temp_file_error">图片错误</string>
+    <string name="selector_folder_all">所有图片</string>
+    <string name="selector_caption">选择图片</string>
+    <string name="selector_preview">预览</string>
+    <!--http://stackoverflow.com/questions/17502824/whats-wrong-with-this-format-string-->
+    <string name="selector_permission_error">权限错误，无法正常工作！</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="selector_action_done">完成(%1$d/%2$d)</string>
+
+    <string name="or_upApp">是否更新程序</string>
+    <string name="check_pwd">修改密码</string>
+    <string name="assessLine">考试列表</string>
+    <string name="my_infoorm">个人信息</string>
+    <string name="app_name">宜春公交ERP信息管理系统</string>
+    <string name="work_add">添加</string>
+    <string name="btn_login">登录</string>
+    <string name="register">注册</string>
+    <string name="title_tips">温馨提示</string>
+    <string name="title_tips_confim">确定</string>
+    <string name="title_tips_cancel">取消</string>
+    <string name="function_list">功能列表</string>
+    <string name="moring_news">综合早报</string>
+    <string name="more_news">更多</string>
+    <string name="details">详情</string>
+    <string name="person_liable">责任人</string>
+    <string name="address">地点</string>
+    <string name="penalty">罚款</string>
+    <string name="time">时间</string>
+    <string name="reason">原因</string>
+
+    <!--教育培训-->
+    <string name="no_assess">暂无试题</string>
+    <string name="up_assess">交卷</string>
+    <string name="sure_up_assess">确定交卷？</string>
+    <string name="education_and_training">培训练习</string>
+    <string name="moni_training">模拟考试</string>
+    <string name="zaixian_stydy">在线学习</string>
+    <string name="zaixian_training">在线考试</string>
+    <string name="downlod">下载</string>
+    <string name="result">考试结果</string>
+    <string name="line_study">在线学习</string>
+    <string name="TorF">判断题</string>
+    <string name="onedelect">单选题</string>
+    <string name="moselect">多选题</string>
+    <string name="error">错题集</string>
+
+    <!--timeselect-->
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">提交</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+
+    <!--login-->
+    <string name="logo_big_text">公交ERP办公系统</string>
+    <string name="logo_small_text">宜春公交ERP信息管理系统</string>
+    <string name="company_name">宜春公交集团有限公司</string>
+    <string name="welcome_user_app">欢迎使用宜春公交ERP信息管理系统</string>
+    <string name="fit_window">设置</string>
+    <string name="login_name">请输入账号</string>
+    <string name="login_pwd">请输入密码</string>
+    <string name="fit_ip">请输入IP地址</string>
+    <string name="fit_socket">请输入端口号</string>
+    <string name="login">登录</string>
+    <string name="save">保存</string>
+    <string name="toast_infor">Ip、端口和地区不能为空</string>
+    <string name="toast_login_infor">用户名和密码不能为空</string>
+    <string name="search_phone">搜素</string>
+    <string name="no_search_phone">暂无对应数据</string>
+    <string name="no_content">暂无数据</string>
+    <string name="renovate">刷新</string>
+
+    <!--mainActivity-->
+    <string name="home_page">首页</string>
+    <string name="phone_list">通讯录</string>
+    <string name="my_personal">个人中心</string>
+    <string name="my_name">用户名</string>
+    <string name="my_status">用户身份</string>
+    <string name="quit_app">退出程序</string>
+    <string name="add_person">添加人员</string>
+
+    <!--办公签到-->
+    <string name="sign_in">办公签到</string>
+    <string name="up_work">上班打卡</string>
+    <string name="down_work">下班打卡</string>
+    <string name="sign_in_time">签到时间</string>
+    <string name="sign_in_address">签到地点</string>
+    <string name="fail_address">定位失败</string>
+
+
+    <!--个人消息-->
+    <string name="my_information">个人消息</string>
+    <string name="myself_information">我的消息</string>
+    <string name="my_email">内部邮件</string>
+    <string name="new_infor">最新消息</string>
+    <string name="my_inemail">收件箱</string>
+    <string name="my_outemail">发件箱</string>
+    <string name="my_testemail">草稿箱</string>
+    <string name="write_email">写邮件</string>
+    <string name="email_theme">主题:</string>
+    <string name="email_recipi">收件人:</string>
+    <string name="email_copy">抄送人:</string>
+    <string name="email_appendix">附件:</string>
+    <string name="send_email_copy">存草稿</string>
+    <string name="write_recipi">请输入收件人姓名</string>
+    <string name="write_copy">请输入抄送人姓名</string>
+    <string name="write_appendix">请选择附件</string>
+    <string name="person_list">人员列表</string>
+
+
+    <!--我的流程-->
+    <string name="technological_process">我的流程</string>
+    <string name="my_do_flow">已办事项</string>
+    <string name="my_do_event">待办事项</string>
+
+    <!--业务检查-->
+    <string name="business_inspect">业务检查</string>
+    <string name="inspect_time">检查时间</string>
+    <string name="inspect_day">日常检查</string>
+    <string name="inspect_health">卫生检查</string>
+    <string name="select_inspect_car">检查车辆</string>
+    <string name="select_inspect_line">检查线路</string>
+    <string name="select_inspect_compart">选择公司</string>
+    <string name="select_inspect_driver">驾驶员</string>
+    <string name="select_inspect_address">区段（地点）</string>
+    <string name="select_inspect_weather">天气状况</string>
+    <string name="select_inspect_assess">综合评价</string>
+    <string name="select_inspect_sure">落实情况</string>
+    <string name="inspect_event">检查项</string>
+    <string name="qualified">合格</string>
+    <string name="no_qualified">不合格</string>
+    <string name="select_photo">选择图片</string>
+    <string name="select_car">选择车辆</string>
+    <string name="please_select">请选择</string>
+    <string name="inspect_demonstrate">优服示范车考核</string>
+    <string name="inspect_health1">服务卫生检查</string>
+    <string name="inspect_suffer">安全秩序检查</string>
+    <string name="inspect_skill">技术状况检查</string>
+    <string name="inspect_all">综合技能考核</string>
+    <string name="pass">合格</string>
+    <string name="no_pass">不合格</string>
+    <string name="text_detail">检查备注</string>
+    <string name="inspect_time_sure_c">通知单位</string>
+    <string name="inspect_time_sure_m">告诫本人</string>
+    <string name="inspect_assess_fine">优秀</string>
+    <string name="inspect_assess_pass">合格</string>
+    <string name="btn_query">查询</string>
+    <string name="col_line">线路</string>
+    <string name="col_busCode">车号</string>
+    <string name="col_driver">驾驶员</string>
+    <string name="col_ludui">路队</string>
+    <string name="col_date">日期</string>
+    <string name="col_plan">计划趟次</string>
+    <string name="col_real">实际趟次</string>
+    <string name="col_planMile">计划里程</string>
+    <string name="col_realMile">实际里程</string>
+    <string name="col_warnCount">报警次数</string>
+    <string name="col_depart">单位</string>
+    <string name="col_busCount">出车数</string>
+    <string name="plerse_write_keyword">请输入关键字或点击右侧按钮</string>
+    <string name="plerse_write_weather">请输入天气状况</string>
+    <string name="please_write_address">请输入区段</string>
+    <string name="clean_car">洗车工</string>
+    <string name="inspect_work">检查人</string>
+
+
+    <!--统计分析-->
+    <string name="data_analysis">统计分析</string>
+    <string name="monthf">月份:</string>
+    <string name="start_monthf">开始月份:</string>
+    <string name="end_monthf">结束月份:</string>
+    <string name="income">总收入</string>
+    <string name="passenger">总客流</string>
+    <string name="course">总里程</string>
+    <string name="line_chart">折线图</string>
+    <string name="pie_chart">饼状图</string>
+    <string name="data_sr">收入</string>
+    <string name="data_lc">里程</string>
+    <string name="data_nh">能耗</string>
+    <string name="data_cl">材料</string>
+    <string name="data_aq">安全</string>
+    <string name="up_month">上月</string>
+    <string name="next_month">下月</string>
+    <string name="query">查询</string>
+
+    <!--员工专区-->
+    <string name="staff_work">员工专区</string>
+    <string name="staff_study">学习园地</string>
+    <string name="staff_infor">信息查询</string>
+    <string name="staff_honner">荣誉榜</string>
+    <string name="staff_column">公示栏</string>
+    <string name="staff_exposure">曝光台</string>
+    <string name="staff_reader">阅览室</string>
+    <string name="staff_assess">在线考试</string>
+    <string name="staff_investigate">满意度调查</string>
+    <string name="staff_email">总经理信箱</string>
+    <string name="staff_know">安全小知识</string>
+    <string name="staff_book">安全指导书</string>
+    <string name="staff_means">培训学习资料</string>
+    <string name="staff_cases">事故经典案例</string>
+    <string name="staff_class">班次查询</string>
+    <string name="staff_meail">里程查询</string>
+    <string name="staff_weizhang">违章查询</string>
+    <string name="staff_chuche">出车查询</string>
+    <string name="staff_income">收入查询</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="staff_keshi">先进科室</string>
+    <string name="staff_gongzuoze">先进工作者</string>
+    <string name="staff_dangyuan">优秀党员</string>
+    <string name="staff_wenmingbb">文明服务标兵</string>
+    <string name="staff_aichebb">爱车标兵</string>
+    <string name="up_sucess">提交成功</string>
+    <string name="assess_score">考试成绩</string>
+    <string name="assess_name">考试题目</string>
+    <string name="gongsi_xj">星级评选</string>
+    <string name="gongsi_dx">先进典型</string>
+    <string name="gongsi_xl">优秀线路</string>
+
+    <string name="c_success">操作成功</string>
+    <string name="c_false">操作失败</string>
+
+
+    <!--新闻公告-->
+    <string name="news_notice">新闻公告</string>
+    <string name="news">新闻</string>
+    <string name="notice">公告</string>
+    <string name="title_activity_sign_his">SignHisActivity</string>
+
+    <!--流程审批-->
+    <string name="oa_flow">流程审批</string>
+    <string name="write_data">填写数据</string>
+    <string name="flow_list">申请列表</string>
+    <string name="flow_willdo">待办流程</string>
+    <string name="send_flow">发起审批</string>
+    <string name="nullify">作废</string>
+    <string name="nullify_reason">作废原因</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fragment_rb1">协同办公</string>
+    <string name="fragment_rb2">人力资源</string>
+    <string name="fragment_rb3">营运管理</string>
+    <string name="fragment_rb4">维修管理</string>
+    <string name="fragment_rb5">物资管理</string>
+    <string name="fragment_rb6">安全管理</string>
+    <string name="fragment_rb7">统计分析</string>
+    <string name="fragment_rb8">综合查询</string>
+
+    <string name="oaflow_rb1">公告查询</string>
+    <string name="oaflow_rb2">会议管理</string>
+    <string name="oaflow_rb3">流程审批</string>
+    <string name="oaflow_rb4">通讯录</string>
+    <string name="oaflow_rb5">督办</string>
+
+    <string name="oaflow_metting_rb1">待我参加</string>
+    <string name="oaflow_metting_rb2">我已参加</string>
+    <string name="oaflow_metting_rb3">待开会议</string>
+    <string name="oaflow_metting_rb4">已开会议</string>
+    <string name="oaflow_metting_rb5">会议纪要</string>
+
+    <string name="oaflow_human_rb1">应聘人员</string>
+    <string name="oaflow_human_rb2">实习驾驶员</string>
+    <string name="oaflow_human_rb3">档案查询</string>
+
+    <string name="oaflow_operation_rb1">车辆档案</string>
+    <string name="oaflow_operation_rb2">线路查询</string>
+
+    <string name="oaflow_safer_rb1">违章档案</string>
+    <string name="oaflow_safer_rb2">事故档案</string>
+
+    <string name="oaflow_comper_rb1">营运指标</string>
+    <string name="oaflow_comper_rb2">生产营运</string>
+    <string name="department">部门</string>
+
+    <string name="oaflow_statist_rb1">人员统计</string>
+    <string name="oaflow_statist_rb2">人员变动</string>
+    <string name="oaflow_statist_rb3">年度里程</string>
+    <string name="oaflow_statist_rb4">成本营收</string>
+    <string name="oaflow_statist_rb41">百公里营收</string>
+    <string name="oaflow_statist_rb42">百公里成本</string>
+    <string name="oaflow_statist_rb5">能源比例</string>
+    <string name="oaflow_statist_rb6">材料出库</string>
+    <string name="oaflow_statist_rb7">人员变动</string>
+    <string name="oaflow_statist_rb8">人员汇总</string>
+    <string name="oaflow_statist_rb9">异常班次</string>
+    <string name="oaflow_statist_rb10">违规记录</string>
+    <string name="oaflow_statist_rb11">收入类型</string>
+
+</resources>

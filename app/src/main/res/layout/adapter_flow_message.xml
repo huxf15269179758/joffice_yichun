@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="47dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/linearlayout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNum"
+            style="@style/oaTextView1"
+            android:layout_width="45dp"
+            android:text="序号" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvTask"
+            style="@style/oaTextView1"
+            android:layout_width="120dp"
+            android:text="任务名" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvPerson"
+            style="@style/oaTextView1"
+            android:layout_width="100dp"
+            android:text="执行人" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvStartTime"
+            style="@style/oaTextView1"
+            android:layout_width="140dp"
+            android:text="开始于" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvEndTime"
+            style="@style/oaTextView1"
+            android:layout_width="140dp"
+            android:text="结束于" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/oaTextView1"
+            android:layout_width="120dp"
+            android:text="耗时" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvType"
+            style="@style/oaTextView1"
+            android:layout_width="100dp"
+            android:text="状态" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/shouye" />
+
+        <TextView
+            android:id="@+id/tvAggre"
+            style="@style/oaTextView1"
+            android:layout_width="wrap_content"
+            android:text="审批意见" />
+    </LinearLayout>
+</LinearLayout>

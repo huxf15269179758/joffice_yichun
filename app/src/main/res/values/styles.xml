@@ -1,0 +1,418 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="NoAction" parent="Theme.AppCompat.Light.NoActionBar" />
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">50dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
+    </style>
+
+    <style name="WindowTitleBackground">
+        <item name="android:background">@drawable/appback</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--自定义header属性-->
+    <declare-styleable name="Header">
+        <attr name="header_title" format="string" />
+        <attr name="header_title_left" format="string" />
+        <attr name="header_title_right" format="string" />
+        <attr name="header_image_left" format="reference" />
+        <attr name="header_image_right" format="reference" />
+        <attr name="header_iv_left_bg" format="reference" />
+        <attr name="header_iv_right_bg" format="reference" />
+        <attr name="header_is_title_visiable" format="boolean" />
+        <attr name="header_is_left_iv_visiable" format="boolean" />
+        <attr name="header_is_left_tv_visiable" format="boolean" />
+        <attr name="header_is_right_tv_visiable" format="boolean" />
+        <attr name="header_is_right_iv_visiable" format="boolean" />
+    </declare-styleable>
+
+
+    <style name="main_tab_style">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:paddingBottom">6dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/main_tab_color_bg</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@animator/fade_in</item>
+        <item name="android:windowExitAnimation">@animator/fade_out</item>
+    </style>
+
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1200</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+    <!-- 配置dialog样式 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:popupBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- <item name="android:backgroundDimEnabled">true</item> -->
+    </style>
+
+    <!--自定义radiobutton-->
+    <style name="activity_radionbutton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">7dip</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:paddingBottom">6dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/radionbutton_select</item>
+    </style>
+
+    <style name="radionbutton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingBottom">6dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--自定义linerlayout-->
+    <style name="linerlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--自定义ImageView-->
+    <style name="ImaheView">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!--自定义EditText-->
+    <style name="EditText">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <!--自定义分割线-->
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/line</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <!--自定义radiobutton-->
+    <style name="RadionButton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:paddingBottom">6dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/radionbutton_select</item>
+    </style>
+
+    <!--自定义radiobutton-->
+    <style name="RadionButton1">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:paddingBottom">6dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/radionbutton_select</item>
+    </style>
+
+    <!--自定义BUtton-->
+    <style name="Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/color_bg_selected</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <!--自定义Header-->
+    <style name="Heander">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <!--自定义TextView-->
+    <style name="TextView">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+    <!--timedialog-->
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!--自定义TextView-->
+    <style name="LL_TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <!--Fragment  radionbutton-->
+    <style name="fragment0_radionbutton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--Fragment  radionbutton-->
+    <style name="activity1_radionbutton">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textColor">@color/radionbutton_select</item>
+        <item name="android:background">@drawable/button_select</item>
+    </style>
+
+    <!--activity rsittext-->
+    <style name="activity_edittext">
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">20dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="menu_bottom_text">
+        <item name="android:textColor">@color/menu_bottom_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 自定义的Toast动画 -->
+    <style name="Lite.Animation.Toast" parent="@android:style/Animation.Toast">
+        <item name="android:windowEnterAnimation">@anim/lite_toast_enter</item>
+        <item name="android:windowExitAnimation">@anim/lite_toast_exit</item>
+    </style>
+
+    <style name="NoAction.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NoAction.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--OA TextView-->
+    <style name="oaTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <!--OA EditText-->
+    <style name="oaEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="oaTextView1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <!--OA EditText-->
+    <style name="oaEditText1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="numTextView">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/new_message</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="textWrite">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <style name="ycFrameLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@color/whith</item>
+        <item name="android:layout_marginTop">1.5dp</item>
+    </style>
+
+    <style name="ycLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="ycImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+    </style>
+    <style name="ycTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="ycGO">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:src">@drawable/go</item>
+    </style>
+
+    <!--OA EditText-->
+    <style name="oaEditText2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="textWrite2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2.5</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textColorHint">@color/red</item>
+    </style>
+
+    <!--OA TextView-->
+    <style name="oaTextView2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <!--自定义横向分割线-->
+    <style name="HourLine">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/shouye</item>
+    </style>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

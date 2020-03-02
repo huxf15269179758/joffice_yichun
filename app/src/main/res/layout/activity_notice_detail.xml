@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="公告">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFFFFF"
+            android:textColor="@color/xiaohei"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/tvAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/ziti"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/ziti"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/ziti"
+                android:text="失效时间"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tvEndTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/ziti"
+                android:gravity="center"/>
+        </LinearLayout>
+        <View style="@style/HourLine"/>
+        <WebView
+            android:id="@+id/webView"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra ="7dp"
+            android:padding ="10dp"
+            android:textSize="16dp"/>
+
+        <View style="@style/line"></View>
+        <LinearLayout
+            android:id="@+id/llData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                style="@style/oaTextView"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:text="附件:"
+                android:textColor="@color/file_color"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/shouye" />
+
+            <TextView
+                android:id="@+id/tvData"
+                style="@style/textWrite"
+                android:textColor="@color/file_color"/>
+        </LinearLayout>
+        <View style="@style/line"></View>
+    </LinearLayout>
+
+</LinearLayout>

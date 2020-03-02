@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/linearlayout_radius"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:minHeight="33dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="任务:"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvTaskName"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPZ"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:minHeight="33dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="批注:"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvPiZhu"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:minHeight="33dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvSeeStaue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="状态:"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvStaue"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:maxLines="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:minHeight="45dp"
+            android:layout_weight="1.6"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="内容:"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:maxLines="2"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:minHeight="33dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="时间:"
+                android:gravity="center"
+                android:textColor="@color/ziti"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textColor="@color/ziti"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

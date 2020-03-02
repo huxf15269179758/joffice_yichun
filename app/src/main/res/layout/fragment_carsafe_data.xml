@@ -1,0 +1,413 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.oa_flow.fragment.FragmentCarData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="时间: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvTime"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+            <include layout="@layout/select_person"/>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="申请部门: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/etDpartment"
+                    android:hint="请填写申请部门"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="车牌号"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etOutCarNo1"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etOutCarNo2"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etOutCarNo3"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etOutCarNo4"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etOutCarNo5"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="保险公司"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeSepart1"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeSepart2"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeSepart3"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeSepart4"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeSepart5"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="险种"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeType1"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeType2"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeType3"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeType4"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeType5"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="金额"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeMoney1"
+                            style="@style/oaEditText"
+                            android:inputType="number|numberDecimal"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeMoney2"
+                            style="@style/oaEditText"
+                            android:inputType="number|numberDecimal"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeMoney3"
+                            style="@style/oaEditText"
+                            android:inputType="number|numberDecimal"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeMoney5"
+                            style="@style/oaEditText"
+                            android:inputType="number|numberDecimal"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <EditText
+                            android:id="@+id/etSafeMoney4"
+                            style="@style/oaEditText"
+                            android:inputType="number|numberDecimal"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"/>
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="120dp"
+                            android:layout_height="45dp"
+                            android:text="起保日期"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate1"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate2"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate3"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate4"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                        <View style="@style/line"></View>
+                        <TextView
+                            android:id="@+id/tvSafeDate5"
+                            style="@style/oaEditText"
+                            android:layout_height="45dp"
+                            android:layout_width="120dp"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/shouye"
+                        android:layout_marginRight="8dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <View style="@style/line"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="合计金额: *"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvAllMoney"
+                    android:hint="请填写合计金额"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/oaTextView"
+                    android:text="附件:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tvData"
+                    android:hint="点击选择附件"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/shouye"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeaderW"
+                    style="@style/oaTextView"
+                    android:text="部门领导:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/etLeader"
+                    style="@style/oaEditText"
+                    android:hint="部门领导意见"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader1W"
+                    style="@style/oaTextView"
+                    android:text="分管领导:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/etLeader1"
+                    android:hint="分管领导意见"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvLeader2W"
+                    style="@style/oaTextView"
+                    android:text="总经理:"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/shouye"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/etLeader2"
+                    android:hint="总经理意见"
+                    style="@style/oaEditText"/>
+            </LinearLayout>
+            <View style="@style/line"
+                android:layout_marginBottom="45dp"></View>
+
+            <Button
+                android:id="@+id/btnUp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="45dp"
+                android:background="@drawable/linearlayout_colore_radius"
+                android:text="提交"
+                android:gravity="center"
+                android:textColor="@color/whith"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

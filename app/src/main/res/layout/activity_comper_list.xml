@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.comper.ComperListActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="@string/fragment_rb8">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb1"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/oaflow_comper_rb1"
+            android:text="@string/oaflow_comper_rb1" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/oaflow_comper_rb2"
+            android:text="@string/oaflow_comper_rb2" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            style="@style/RadionButton"
+            android:drawableTop="@drawable/oaflow_comper_rb1"
+            android:text="@string/oaflow_comper_rb1" />
+
+    </RadioGroup>
+
+</LinearLayout>

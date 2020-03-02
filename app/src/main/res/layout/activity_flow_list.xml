@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@+id/header"
+        style="@style/Heander"
+        app:header_title="请假审批">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <RadioGroup
+        android:id="@+id/radionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbData"
+            style="@style/main_tab_style"
+            android:checked="true"
+            android:text="@string/write_data"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbList"
+            style="@style/main_tab_style"
+            android:text="@string/flow_list"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:visibility="gone"
+            android:id="@+id/rbWillDo"
+            style="@style/main_tab_style"
+            android:text="@string/flow_willdo"
+            android:textSize="16dp" />
+    </RadioGroup>
+
+    <View
+        style="@style/line"
+        android:layout_margin="2dp"/>
+    <com.hy.powerplatform.my_utils.myViews.NoScrollViewPager
+        android:id="@+id/noScrollViewPager"
+        android:background="#FFFFFF"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

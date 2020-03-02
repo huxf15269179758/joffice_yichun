@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hy.powerplatform.business_inspect.newactivity.MainTainActivity">
+
+    <com.hy.powerplatform.my_utils.myViews.Header
+        android:id="@id/header"
+        android:visibility="gone"
+        style="@style/Heander"
+        app:header_title="车辆维修">
+    </com.hy.powerplatform.my_utils.myViews.Header>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+    </WebView>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="XXX"/>
+
+</LinearLayout>
