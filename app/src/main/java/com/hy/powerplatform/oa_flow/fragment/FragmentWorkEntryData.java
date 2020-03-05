@@ -98,7 +98,7 @@ public class FragmentWorkEntryData extends Fragment {
     List<String> selectList = new ArrayList<>();
     List<String> namelist1 = new ArrayList<>();
     String userDepart = "";
-    String isShow = "true";
+    String isShow = "flase";
     @BindView(R.id.spinnerCarType1)
     Spinner spinnerCarType1;
     @BindView(R.id.spinnerCarType2)

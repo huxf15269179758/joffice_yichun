@@ -909,6 +909,29 @@ public class FlowPuechaseWillDetailActivity extends BaseActivity {
     private void setCbRbVer() {
         resultList.clear();
         bigResultList.clear();
+        ll1.setVisibility(View.GONE);
+        ll2.setVisibility(View.GONE);
+        ll3.setVisibility(View.GONE);
+        ll4.setVisibility(View.GONE);
+        ll5.setVisibility(View.GONE);
+        rb1.setChecked(false);
+        rb2.setChecked(false);
+        rb3.setChecked(false);
+        rb4.setChecked(false);
+        rb5.setChecked(false);
+        rb6.setChecked(false);
+        cb1.setChecked(false);
+        cb2.setChecked(false);
+        cb3.setChecked(false);
+        cb4.setChecked(false);
+        cb5.setChecked(false);
+        cb6.setChecked(false);
+        cb7.setChecked(false);
+        cb8.setChecked(false);
+        cb9.setChecked(false);
+        cb10.setChecked(false);
+        cb11.setChecked(false);
+        cb12.setChecked(false);
         if (nametemp != null) {
             if (nametemp.length == 1) {
                 rb1.setText(nametemp[0]);
@@ -1276,6 +1299,7 @@ public class FlowPuechaseWillDetailActivity extends BaseActivity {
                 break;
             case R.id.btnT:
                 btnTTag = "Y";
+                llShenPiRenList.setVisibility(View.VISIBLE);
                 if (beanList.size() != 0) {
                     if (beanList.size() == 1) {
                         ProgressDialogUtil.startLoad(FlowPuechaseWillDetailActivity.this, "获取数据中");

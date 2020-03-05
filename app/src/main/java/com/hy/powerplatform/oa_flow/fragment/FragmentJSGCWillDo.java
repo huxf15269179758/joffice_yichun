@@ -229,7 +229,7 @@ public class FragmentJSGCWillDo extends Fragment implements FlowQingJiaWillDoAda
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_TWO:
-                    Toast.makeText(getActivity(), "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_THERE:

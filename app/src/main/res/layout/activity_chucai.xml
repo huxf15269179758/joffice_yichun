@@ -1,8 +1,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context="com.hy.powerplatform.oa_flow.fragment.FragmentCarData">
 
@@ -10,274 +10,334 @@
         android:id="@+id/header"
         style="@style/Heander"
         app:header_is_right_tv_visiable="true"
-        app:header_title_right="@string/nullify"
-        app:header_title="出差申请审批表">
-    </com.hy.powerplatform.my_utils.myViews.Header>
+        app:header_title="出差申请审批表"
+        app:header_title_right="@string/nullify"></com.hy.powerplatform.my_utils.myViews.Header>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="时间: *"/>
+                    android:text="时间: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvTime"
-                    style="@style/oaEditText"/>
+                    style="@style/oaEditText" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="申报部门: *"/>
+                    android:text="申报部门: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvDepartment"
-                    android:hint="请填写申报部门"
-                    style="@style/oaEditText"/>
+                    style="@style/oaEditText"
+                    android:hint="请填写申报部门" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="出差人员: *"/>
+                    android:text="出差人员: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvPerson"
-                    android:hint="请填写出差人员"
-                    style="@style/oaEditText"/>
+                    style="@style/oaEditText"
+                    android:hint="请填写出差人员" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="开始时间: *"/>
+                    android:text="开始时间: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvStartTime"
                     style="@style/oaEditText" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="结束时间: *"/>
+                    android:text="结束时间: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvEndTime"
                     style="@style/oaEditText" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="出差天数: *"/>
+                    android:text="出差天数: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvAllDays"
-                    android:hint="请填写出差天数"
-                    style="@style/oaEditText" />
+                    style="@style/oaEditText"
+                    android:hint="请填写出差天数" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="出差地点: *"/>
+                    android:text="出差地点: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="2.5"
                     android:layout_height="match_parent"
+                    android:layout_weight="2.5"
                     android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="从"
                         android:gravity="center"
-                        android:textSize="15dp"
-                        android:textColor="@color/black"/>
+                        android:text="从"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
                     <TextView
                         android:id="@+id/tvAddress1"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_height="match_parent"
                         android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:textSize="15dp"
-                        android:textColor="@color/black"
+                        android:layout_weight="1"
                         android:background="@drawable/linearlayout"
-                        android:layout_height="match_parent"/>
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="途经"
                         android:gravity="center"
-                        android:textSize="15dp"
-                        android:textColor="@color/black"/>
+                        android:text="途经"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
                     <TextView
                         android:id="@+id/tvAddress2"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_height="match_parent"
                         android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:textSize="15dp"
-                        android:textColor="@color/black"
+                        android:layout_weight="1"
                         android:background="@drawable/linearlayout"
-                        android:layout_height="match_parent"/>
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="到"
                         android:gravity="center"
-                        android:textSize="15dp"
-                        android:textColor="@color/black"/>
+                        android:text="到"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
                     <TextView
                         android:id="@+id/tvAddress3"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
+                        android:layout_height="match_parent"
                         android:layout_margin="4dp"
-                        android:gravity="center"
-                        android:textSize="15dp"
-                        android:textColor="@color/black"
+                        android:layout_weight="1"
                         android:background="@drawable/linearlayout"
-                        android:layout_height="match_parent"/>
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
                 </LinearLayout>
 
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="交通工具: *"/>
+                    android:text="交通工具: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvCar"
                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="2.5"
                     android:gravity="center"
-                    android:textSize="15dp"
                     android:textColor="@color/black"
-                    android:layout_height="match_parent"/>
+                    android:textSize="15dp" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="出差事由: *"
                     android:layout_height="45dp"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:text="出差事由: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
 
                 <TextView
                     android:id="@+id/tvReason"
                     style="@style/textWrite"
                     android:hint="请填写出差事由" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="预计费用: *"/>
+                    android:text="预计费用: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvYJMoney"
-                    android:hint="请填写预计费用"
-                    style="@style/oaEditText" />
+                    style="@style/oaEditText"
+                    android:hint="请填写预计费用" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     style="@style/oaTextView"
-                    android:text="暂借现金: *"/>
+                    android:text="暂借现金: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tvZJMoney"
-                    android:hint="请填写暂借现金"
-                    style="@style/oaEditText" />
+                    style="@style/oaEditText"
+                    android:hint="请填写暂借现金" />
             </LinearLayout>
+
             <View style="@style/line"></View>
+
             <LinearLayout
                 android:id="@+id/llData"
                 android:layout_width="match_parent"
@@ -297,263 +357,320 @@
                 <TextView
                     android:id="@+id/tvData"
                     style="@style/oaTextView"
-                    android:hint="点击选择附件"
-                    android:layout_weight="2.5"/>
+                    android:layout_weight="2.5"
+                    android:hint="点击选择附件" />
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/llShenPiRen"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:background="@color/shouye"/>
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvspr"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/shouye"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="审批人"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye"
+                    android:padding="15dp"
+                    android:src="@drawable/go" />
+            </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/llShenPiRenList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <LinearLayout
-                    android:id="@+id/ll1"
-                    android:visibility="gone"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/cb1"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone"/>
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb2"
-                        android:layout_width="0dp"
+                        <CheckBox
+                            android:id="@+id/cb1"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb2"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb3"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb3"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
+                        <CheckBox
+                            android:id="@+id/cb4"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb5"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb6"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <View style="@style/line"></View>
 
                 <LinearLayout
-                    android:id="@+id/ll2"
-                    android:visibility="gone"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/cb4"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb5"
-                        android:layout_width="0dp"
+                        <CheckBox
+                            android:id="@+id/rb1"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb2"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb3"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb6"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
+                        <CheckBox
+                            android:id="@+id/rb4"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb5"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb6"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:visibility="gone" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <View style="@style/line"></View>
             </LinearLayout>
-            <View style="@style/line"></View>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
 
-                <LinearLayout
-                    android:id="@+id/ll3"
-                    android:visibility="gone"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:id="@+id/rb1"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb2"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb3"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll4"
-                    android:visibility="gone"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal">
-
-                    <CheckBox
-                        android:id="@+id/rb4"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb5"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb6"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:checked="true"
-                        android:visibility="gone" />
-                </LinearLayout>
-            </LinearLayout>
-            <View style="@style/line"></View>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:id="@+id/tvLeaderW"
                     style="@style/oaTextView"
-                    android:text="部门领导:"
                     android:layout_height="45dp"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:text="部门领导:" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <EditText
                     android:id="@+id/etLeader"
-                    android:visibility="gone"
                     style="@style/textWrite"
-                    android:hint="部门领导意见"/>
+                    android:hint="部门领导意见"
+                    android:visibility="gone" />
+
                 <TextView
                     android:id="@+id/tvLeader"
                     style="@style/textWrite"
-                    android:hint="部门领导意见"/>
+                    android:hint="部门领导意见" />
             </LinearLayout>
-            <View style="@style/line"></View>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:id="@+id/tvLeader1W"
-                    style="@style/oaTextView"
-                    android:text="分管领导:"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_vertical"/>
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
-                <EditText
-                    android:id="@+id/etLeader1"
-                    android:visibility="gone"
-                    android:hint="分管领导意见"
-                    style="@style/textWrite"/>
-                <TextView
-                    android:id="@+id/tvLeader1"
-                    android:hint="分管领导意见"
-                    style="@style/textWrite"/>
-            </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
-                    android:id="@+id/tvLeaderCWZJ"
+                    android:id="@+id/tvLeader1W"
                     style="@style/oaTextView"
-                    android:text="财务总监:"
                     android:layout_height="45dp"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:text="分管领导:" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
+                <EditText
+                    android:id="@+id/etLeader1"
+                    style="@style/textWrite"
+                    android:hint="分管领导意见"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvLeader1"
+                    style="@style/textWrite"
+                    android:hint="分管领导意见" />
+            </LinearLayout>
+
+            <View style="@style/line"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLeaderCWZJ"
+                    style="@style/oaTextView"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="财务总监:" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <EditText
                     android:id="@+id/etLeaderCWZJ"
-                    android:visibility="gone"
+                    style="@style/textWrite"
                     android:hint="财务总监意见"
-                    style="@style/textWrite"/>
+                    android:visibility="gone" />
+
                 <TextView
                     android:id="@+id/tvLeaderTCWZJ"
-                    android:hint="财务总监意见"
-                    style="@style/textWrite"/>
+                    style="@style/textWrite"
+                    android:hint="财务总监意见" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
+
                 <TextView
                     android:id="@+id/tvLeader2W"
                     style="@style/oaTextView2"
-                    android:text="总经理:"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:text="总经理:" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
-                    android:background="@color/shouye"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye" />
+
                 <EditText
                     android:id="@+id/etLeader2"
-                    android:visibility="gone"
+                    style="@style/textWrite2"
                     android:hint="总经理意见"
-                    style="@style/textWrite2"/>
+                    android:visibility="gone" />
+
                 <TextView
                     android:id="@+id/tvLeader2"
-                    android:hint="总经理意见"
-                    style="@style/textWrite2"/>
+                    style="@style/textWrite2"
+                    android:hint="总经理意见" />
             </LinearLayout>
-            <View style="@style/line"
+
+            <View
+                style="@style/line"
                 android:layout_marginBottom="45dp"></View>
 
             <include layout="@layout/get_person"></include>
@@ -564,28 +681,28 @@
                 android:layout_height="45dp"
                 android:layout_margin="45dp"
                 android:background="@drawable/linearlayout_colore_radius"
-                android:text="提交"
                 android:gravity="center"
-                android:textColor="@color/whith"/>
+                android:text="提交"
+                android:textColor="@color/whith" />
 
 
             <Button
                 android:id="@+id/btnHistory"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginBottom="45dp"
                 android:layout_marginLeft="45dp"
                 android:layout_marginRight="45dp"
-                android:layout_marginBottom="45dp"
                 android:background="@drawable/linearlayout_colore_radius"
-                android:text="流程审批信息"
                 android:gravity="center"
-                android:textColor="@color/whith"/>
+                android:text="流程审批信息"
+                android:textColor="@color/whith" />
+
             <android.support.v7.widget.RecyclerView
-                android:visibility="gone"
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </android.support.v7.widget.RecyclerView>
+                android:layout_height="match_parent"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
         </LinearLayout>
     </ScrollView>
 

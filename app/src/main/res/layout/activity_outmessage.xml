@@ -10,9 +10,8 @@
         android:id="@+id/header"
         style="@style/Heander"
         app:header_is_right_tv_visiable="true"
-        app:header_title_right="@string/nullify"
-        app:header_title="集团发文流程">
-    </com.hy.powerplatform.my_utils.myViews.Header>
+        app:header_title="集团发文流程"
+        app:header_title_right="@string/nullify"></com.hy.powerplatform.my_utils.myViews.Header>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,13 +42,14 @@
                     style="@style/oaEditText"
                     android:hint="请填写发文标题" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
-                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/oaTextView"
@@ -66,11 +66,12 @@
                     style="@style/oaEditText"
                     android:hint="请填写主送人" />
             </LinearLayout>
+
             <LinearLayout
-                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     style="@style/oaTextView"
@@ -108,6 +109,7 @@
                     style="@style/oaEditText"
                     android:hint="请填写抄送人" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -130,6 +132,7 @@
                     style="@style/oaEditText"
                     android:hint="请填写拟稿人" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -152,6 +155,7 @@
                     style="@style/oaEditText"
                     android:hint="请填写印发分数" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -174,6 +178,7 @@
                     style="@style/oaEditText"
                     android:hint="请填写文号" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -184,9 +189,9 @@
 
                 <TextView
                     style="@style/oaTextView"
-                    android:text="附件:"
                     android:layout_height="45dp"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:text="附件:" />
 
                 <View
                     android:layout_width="1dp"
@@ -199,6 +204,7 @@
                     style="@style/textWrite"
                     android:hint="点击选择附件" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -305,6 +311,7 @@
                         android:visibility="gone" />
                 </LinearLayout>
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -380,68 +387,100 @@
             </LinearLayout>
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:background="@color/shouye" />
-
             <LinearLayout
+                android:id="@+id/llShenPiRen"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tvLeaderW"
-                    style="@style/oaTextView"
-                    android:text="核稿: *" />
+                    android:id="@+id/tvspr"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/shouye"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="审批人"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="15dp"
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
-                    android:background="@color/shouye" />
-
-                <TextView
-                    android:id="@+id/tvHeGao"
-                    style="@style/oaEditText"
-                    android:hint="请填写核稿人" />
-
-                <TextView
-                    android:id="@+id/tvHeGao1"
-                    style="@style/oaEditText"
-                    android:hint="请填写核稿人"
-                    android:visibility="gone" />
+                    android:background="@color/shouye"
+                    android:padding="15dp"
+                    android:src="@drawable/go" />
             </LinearLayout>
-            <View style="@style/line"></View>
 
             <LinearLayout
+                android:id="@+id/llShenPiRenList"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
 
-                <TextView
-                    android:id="@+id/tvLeader1W"
-                    style="@style/oaTextView"
-                    android:text="审核: *" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
 
-                <View
-                    android:layout_width="1dp"
-                    android:layout_height="15dp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@color/shouye" />
+                    <TextView
+                        android:id="@+id/tvLeaderW"
+                        style="@style/oaTextView"
+                        android:text="核稿: *" />
 
-                <EditText
-                    android:id="@+id/etLeader"
-                    style="@style/oaEditText"
-                    android:hint="请填写审核人"
-                    android:visibility="gone" />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/shouye" />
 
-                <TextView
-                    android:id="@+id/tvLeader"
-                    style="@style/oaEditText"
-                    android:hint="请填写审核人" />
+                    <TextView
+                        android:id="@+id/tvHeGao"
+                        style="@style/oaEditText"
+                        android:hint="请填写核稿人" />
+
+                    <TextView
+                        android:id="@+id/tvHeGao1"
+                        style="@style/oaEditText"
+                        android:hint="请填写核稿人"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View style="@style/line"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvLeader1W"
+                        style="@style/oaTextView"
+                        android:text="审核: *" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/shouye" />
+
+                    <EditText
+                        android:id="@+id/etLeader"
+                        style="@style/oaEditText"
+                        android:hint="请填写审核人"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tvLeader"
+                        style="@style/oaEditText"
+                        android:hint="请填写审核人" />
+                </LinearLayout>
+
+                <View style="@style/line"></View>
             </LinearLayout>
-            <View style="@style/line"></View>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -471,6 +510,7 @@
                     style="@style/textWrite"
                     android:hint="请填写签发人" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -492,12 +532,14 @@
                 <TextView
                     android:id="@+id/tvStartTime"
                     style="@style/oaEditText"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
+
                 <TextView
                     android:id="@+id/tvStartTime1"
                     style="@style/oaEditText"
-                    android:hint="请选择日期"/>
+                    android:hint="请选择日期" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -509,39 +551,47 @@
                     android:id="@+id/tvLeader5W"
                     style="@style/oaTextView"
                     android:text="文号: *" />
+
                 <View
                     android:layout_width="1dp"
                     android:layout_height="15dp"
                     android:layout_gravity="center_vertical"
                     android:background="@color/shouye" />
+
                 <TextView
                     android:id="@+id/tv1"
                     style="@style/oaEditText"
-                    android:visibility="gone"
-                    android:background="@drawable/linearlayout" />
+                    android:background="@drawable/linearlayout"
+                    android:visibility="gone" />
+
                 <EditText
                     android:id="@+id/et1"
                     style="@style/oaEditText"
                     android:background="@drawable/linearlayout"
                     android:visibility="gone" />
+
                 <TextView
                     android:id="@+id/tv2"
                     style="@style/oaEditText"
                     android:background="@drawable/linearlayout" />
+
                 <EditText
                     android:id="@+id/et2"
                     style="@style/oaEditText"
                     android:background="@drawable/linearlayout"
                     android:visibility="gone" />
+
                 <TextView
-                    android:visibility="gone"
                     android:id="@+id/tv3"
                     style="@style/oaEditText"
-                    android:background="@drawable/linearlayout" />
+                    android:background="@drawable/linearlayout"
+                    android:visibility="gone" />
+
                 <TextView
                     android:id="@+id/tv31"
                     style="@style/oaEditText"
                     android:background="@drawable/linearlayout" />
+
                 <EditText
                     android:id="@+id/et3"
                     style="@style/oaEditText"
@@ -549,10 +599,12 @@
                     android:visibility="gone" />
             </LinearLayout>
 
-            <View style="@style/line"
+            <View
+                style="@style/line"
                 android:layout_marginBottom="45dp"></View>
 
             <include layout="@layout/get_person"></include>
+
             <Button
                 android:id="@+id/btnUp"
                 android:layout_width="match_parent"
@@ -567,19 +619,19 @@
                 android:id="@+id/btnHistory"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
+                android:layout_marginBottom="45dp"
                 android:layout_marginLeft="45dp"
                 android:layout_marginRight="45dp"
-                android:layout_marginBottom="45dp"
                 android:background="@drawable/linearlayout_colore_radius"
-                android:text="流程审批信息"
                 android:gravity="center"
-                android:textColor="@color/whith"/>
+                android:text="流程审批信息"
+                android:textColor="@color/whith" />
+
             <android.support.v7.widget.RecyclerView
-                android:visibility="gone"
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </android.support.v7.widget.RecyclerView>
+                android:layout_height="match_parent"
+                android:visibility="gone"></android.support.v7.widget.RecyclerView>
         </LinearLayout>
     </ScrollView>
 

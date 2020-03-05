@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <com.hy.powerplatform.my_utils.myViews.Header
         android:id="@+id/header"
         style="@style/Heander"
         app:header_is_right_tv_visiable="true"
-        app:header_title_right="@string/nullify"
-        app:header_title="驾驶员入职流程表">
-    </com.hy.powerplatform.my_utils.myViews.Header>
+        app:header_title="员工入职流程表"
+        app:header_title_right="@string/nullify"></com.hy.powerplatform.my_utils.myViews.Header>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -42,6 +41,7 @@
                     style="@style/oaEditText"
                     android:hint="请填写入职人姓名" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -64,6 +64,7 @@
                     style="@style/oaEditText"
                     android:hint="请填写联系电话" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -86,6 +87,7 @@
                     style="@style/oaEditText"
                     android:hint="请填写身份证号" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -107,6 +109,7 @@
                     android:id="@+id/tvSex"
                     style="@style/oaEditText" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -128,6 +131,7 @@
                     android:id="@+id/tvCarType"
                     style="@style/oaEditText" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -149,6 +153,7 @@
                     android:id="@+id/tvDepartment"
                     style="@style/oaEditText" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -175,144 +180,176 @@
                     android:hint="点击选择附件" />
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/llShenPiRen"
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
-                android:background="@color/shouye" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvspr"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@color/shouye"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="审批人"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/shouye"
+                    android:padding="15dp"
+                    android:src="@drawable/go" />
+            </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/llShenPiRenList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <LinearLayout
-                    android:id="@+id/ll1"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/cb1"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:visibility="gone" />
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb2"
-                        android:layout_width="0dp"
+                        <CheckBox
+                            android:id="@+id/cb1"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb2"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb3"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:visibility="gone" />
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb3"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
+                        <CheckBox
+                            android:id="@+id/cb4"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb5"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/cb6"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <View style="@style/line"></View>
 
                 <LinearLayout
-                    android:id="@+id/ll2"
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <CheckBox
-                        android:id="@+id/cb4"
-                        android:layout_width="0dp"
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:visibility="gone" />
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb5"
-                        android:layout_width="0dp"
+                        <CheckBox
+                            android:id="@+id/rb1"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb2"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb3"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_weight="1"
-                        android:visibility="gone" />
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
-                    <CheckBox
-                        android:id="@+id/cb6"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
+                        <CheckBox
+                            android:id="@+id/rb4"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb5"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <CheckBox
+                            android:id="@+id/rb6"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <View style="@style/line"></View>
             </LinearLayout>
-            <View style="@style/line"></View>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:id="@+id/ll3"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
-
-                    <CheckBox
-                        android:id="@+id/rb1"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb2"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb3"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll4"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:visibility="gone">
-
-                    <CheckBox
-                        android:id="@+id/rb4"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb5"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
-
-                    <CheckBox
-                        android:id="@+id/rb6"
-                        android:layout_width="0dp"
-                        android:layout_height="45dp"
-                        android:layout_weight="1"
-                        android:visibility="gone" />
-                </LinearLayout>
-            </LinearLayout>
-            <View style="@style/line"></View>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -343,6 +380,7 @@
                     android:hint="接收部门意见"
                     android:visibility="gone" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -374,6 +412,7 @@
                     android:hint="财务审计部意见"
                     android:visibility="gone"></EditText>
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -409,6 +448,7 @@
                     android:hint="登记工号信息"
                     android:visibility="gone" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -444,6 +484,7 @@
                     android:hint="员工编号信息"
                     android:visibility="gone" />
             </LinearLayout>
+
             <View style="@style/line"></View>
 
             <LinearLayout
@@ -477,6 +518,7 @@
                     android:hint="录取指纹"
                     android:visibility="gone" />
             </LinearLayout>
+
             <View
                 style="@style/line"
                 android:layout_marginBottom="45dp"></View>
@@ -492,6 +534,7 @@
                 android:gravity="center"
                 android:text="提交"
                 android:textColor="@color/whith" />
+
             <Button
                 android:id="@+id/btnHistory"
                 android:layout_width="match_parent"
@@ -503,11 +546,12 @@
                 android:gravity="center"
                 android:text="流程审批信息"
                 android:textColor="@color/whith" />
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
         </LinearLayout>
     </ScrollView>

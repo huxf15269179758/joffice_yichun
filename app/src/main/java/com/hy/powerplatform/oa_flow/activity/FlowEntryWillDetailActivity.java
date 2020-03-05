@@ -190,7 +190,13 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
     TextView tvLeaderNumW;
     @BindView(R.id.etLeaderNumW)
     EditText etLeaderNumW;
-    private String name, taskId, res, fullnameUId, fullname, cwsjbyj, yyglbyj, xxjsbyj,ygbh, cctkjyxgsyj, zhglbyj, rlzyb1, jbbmyj = "";
+    @BindView(R.id.tvspr)
+    TextView tvspr;
+    @BindView(R.id.llShenPiRen)
+    LinearLayout llShenPiRen;
+    @BindView(R.id.llShenPiRenList)
+    LinearLayout llShenPiRenList;
+    private String name, taskId, res, fullnameUId, fullname, cwsjbyj, yyglbyj, xxjsbyj, ygbh, cctkjyxgsyj, zhglbyj, rlzyb1, jbbmyj = "";
     private String mainId, signaName, destName, destType, checkTask = "", qianzhiData = "";
     String leader = "";
     String leaderCode = "";
@@ -411,6 +417,22 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
     private void setCbRbVer() {
         resultList.clear();
         bigResultList.clear();
+        ll1.setVisibility(View.GONE);
+        ll2.setVisibility(View.GONE);
+        ll3.setVisibility(View.GONE);
+        ll4.setVisibility(View.GONE);
+        rb1.setChecked(false);
+        rb2.setChecked(false);
+        rb3.setChecked(false);
+        rb4.setChecked(false);
+        rb5.setChecked(false);
+        rb6.setChecked(false);
+        cb1.setChecked(false);
+        cb2.setChecked(false);
+        cb3.setChecked(false);
+        cb4.setChecked(false);
+        cb5.setChecked(false);
+        cb6.setChecked(false);
         if (nametemp != null) {
             if (nametemp.length == 1) {
                 rb1.setText(nametemp[0]);
@@ -567,9 +589,28 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
         ProgressDialogUtil.stopLoad();
     }
 
-    @OnClick({R.id.btnUp, R.id.tvData, R.id.btnT, R.id.btnHistory})
+    @OnClick({R.id.btnUp, R.id.tvData, R.id.btnT, R.id.btnHistory, R.id.llShenPiRen})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.llShenPiRen:
+                if (btnT.getVisibility() == View.VISIBLE) {
+                    if (btnTTag.equals("N")) {
+                        Toast.makeText(this, "请点击加号选择路径", Toast.LENGTH_SHORT).show();
+                    } else {
+                        if (llShenPiRenList.getVisibility() == View.VISIBLE) {
+                            llShenPiRenList.setVisibility(View.GONE);
+                        } else {
+                            llShenPiRenList.setVisibility(View.VISIBLE);
+                        }
+                    }
+                } else {
+                    if (llShenPiRenList.getVisibility() == View.VISIBLE) {
+                        llShenPiRenList.setVisibility(View.GONE);
+                    } else {
+                        llShenPiRenList.setVisibility(View.VISIBLE);
+                    }
+                }
+                break;
             case R.id.btnHistory:
                 recyclerView.setVisibility(View.VISIBLE);
                 ProgressDialogUtil.startLoad(FlowEntryWillDetailActivity.this, "获取数据中");
@@ -591,6 +632,7 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
                 break;
             case R.id.btnT:
                 btnTTag = "Y";
+                llShenPiRenList.setVisibility(View.VISIBLE);
                 if (beanList.size() != 0) {
                     if (beanList.size() == 1) {
                         ProgressDialogUtil.startLoad(FlowEntryWillDetailActivity.this, "获取数据中");
@@ -620,6 +662,7 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
                             public void oneselect(final String data) {
                                 ProgressDialogUtil.startLoad(FlowEntryWillDetailActivity.this, "获取数据中");
                                 destName = data;
+                                tvspr.setText(destName);
                                 for (int i = 0; i < beanList.size(); i++) {
                                     if (destName.equals(beanList.get(i).getDestination())) {
                                         signaName = beanList.get(i).getName();
@@ -894,7 +937,7 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
                         comment = "";
                         personSession();
                     } else if (!rlzyb1.equals("") && !zhglbyj.equals("") && !cctkjyxgsyj.equals("")
-                            && !ygbh.equals("")&& !xxjsbyj.equals("") && !yyglbyj.equals("") && !cwsjbyj.equals("")) {
+                            && !ygbh.equals("") && !xxjsbyj.equals("") && !yyglbyj.equals("") && !cwsjbyj.equals("")) {
                         comment = "";
                         personSession();
                     } else {
@@ -963,9 +1006,9 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
                 String idCard = tvIdNum.getText().toString();
                 String sex = tvSex.getText().toString();
                 String ygbh = "";
-                if (tvLeaderNumW.getVisibility()==View.VISIBLE){
+                if (tvLeaderNumW.getVisibility() == View.VISIBLE) {
                     ygbh = tvLeaderNumW.getText().toString();
-                }else {
+                } else {
                     ygbh = etLeaderNumW.getText().toString();
                 }
                 String fgs = "";
@@ -1125,7 +1168,7 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
                     upData = dbA.OAEntryLeader(url, person, phone, idCard, sex, zjce1, zjce2, zjce3,
                             rlzy1, rlzy2, rlzy3, userCode, destName, taskId, flowAssignld, mainId,
                             cwsjbyj, yyglbyj, xxjsbyj, cctkjyxgsyj, zhglbyj, rlzyb1, comment, signaName,
-                            jbbmyj, fgs,ygbh);
+                            jbbmyj, fgs, ygbh);
                     if (upData.equals("")) {
                         handler.sendEmptyMessage(TAG_THERE);
                     } else {
@@ -1215,25 +1258,25 @@ public class FlowEntryWillDetailActivity extends BaseActivity {
                         zhreout = jsonObject.getString("zhglbyj");
                         rlreout = jsonObject.getString("rlzybyj");
                         jbbmreout = jsonObject.getString("jbbmyj");
-                        if (cwreout==null){
+                        if (cwreout == null) {
                             cwreout = "";
                         }
-                        if (yyreout==null){
+                        if (yyreout == null) {
                             yyreout = "";
                         }
-                        if (xxreout==null){
+                        if (xxreout == null) {
                             xxreout = "";
                         }
-                        if (cctreout==null){
+                        if (cctreout == null) {
                             cctreout = "";
                         }
-                        if (zhreout==null){
+                        if (zhreout == null) {
                             zhreout = "";
                         }
-                        if (rlreout==null){
+                        if (rlreout == null) {
                             rlreout = "";
                         }
-                        if (jbbmreout==null){
+                        if (jbbmreout == null) {
                             jbbmreout = "";
                         }
                         if (cwreout.equals("2")) {

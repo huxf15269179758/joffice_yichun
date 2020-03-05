@@ -88,8 +88,6 @@ public class FlowComplainDetailActivity extends BaseActivity {
     TextView tvLeader3;
     @BindView(R.id.tvLeader4)
     TextView tvLeader4;
-    @BindView(R.id.textView9)
-    TextView textView9;
     @BindView(R.id.cb1)
     CheckBox cb1;
     @BindView(R.id.cb2)
@@ -385,7 +383,7 @@ public class FlowComplainDetailActivity extends BaseActivity {
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_TWO:
-                    Toast.makeText(FlowComplainDetailActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FlowComplainDetailActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_NINE:

@@ -159,6 +159,12 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
     TextView tvLeader2W;
     @BindView(R.id.tvLeader3W)
     TextView tvLeader3W;
+    @BindView(R.id.tvspr)
+    TextView tvspr;
+    @BindView(R.id.llShenPiRen)
+    LinearLayout llShenPiRen;
+    @BindView(R.id.llShenPiRenList)
+    LinearLayout llShenPiRenList;
     private String name, taskId, res, fgldyj = "";
     private String mainId, signaName, destName, destType, checkTask, qianzhiData = "";
     String leader = "";
@@ -367,9 +373,31 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
     private void setCbRbVer() {
         resultList.clear();
         bigResultList.clear();
+        ll1.setVisibility(View.GONE);
+        ll2.setVisibility(View.GONE);
+        ll3.setVisibility(View.GONE);
+        ll4.setVisibility(View.GONE);
+        ll5.setVisibility(View.GONE);
+        rb1.setChecked(false);
+        rb2.setChecked(false);
+        rb3.setChecked(false);
+        rb4.setChecked(false);
+        rb5.setChecked(false);
+        rb6.setChecked(false);
+        cb1.setChecked(false);
+        cb2.setChecked(false);
+        cb3.setChecked(false);
+        cb4.setChecked(false);
+        cb5.setChecked(false);
+        cb6.setChecked(false);
+        cb7.setChecked(false);
+        cb8.setChecked(false);
+        cb9.setChecked(false);
+
         if (nametemp != null) {
             if (nametemp.length == 1) {
                 rb1.setText(nametemp[0]);
+                rb1.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
                 rb2.setVisibility(View.INVISIBLE);
@@ -378,6 +406,8 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
             if (nametemp.length == 2) {
                 rb1.setText(nametemp[0]);
                 rb2.setText(nametemp[1]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
                 rb2.setVisibility(View.VISIBLE);
@@ -387,6 +417,9 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 rb1.setText(nametemp[0]);
                 rb2.setText(nametemp[1]);
                 rb3.setText(nametemp[2]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
                 rb2.setVisibility(View.VISIBLE);
@@ -397,6 +430,10 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 rb2.setText(nametemp[1]);
                 rb3.setText(nametemp[2]);
                 rb4.setText(nametemp[3]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
+                rb4.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 ll4.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
@@ -412,6 +449,11 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 rb3.setText(nametemp[2]);
                 rb4.setText(nametemp[3]);
                 rb5.setText(nametemp[4]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
+                rb4.setChecked(true);
+                rb5.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 ll4.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
@@ -428,6 +470,12 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 rb4.setText(nametemp[3]);
                 rb5.setText(nametemp[4]);
                 rb6.setText(nametemp[5]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
+                rb4.setChecked(true);
+                rb5.setChecked(true);
+                rb6.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 ll4.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
@@ -442,6 +490,7 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
 
         if (bigNametemp != null) {
             if (bigNametemp.length == 1) {
+                cb1.setChecked(true);
                 cb1.setText(bigNametemp[0]);
                 ll1.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -451,6 +500,8 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
             if (bigNametemp.length == 2) {
                 cb1.setText(bigNametemp[0]);
                 cb2.setText(bigNametemp[1]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
                 cb2.setVisibility(View.VISIBLE);
@@ -460,6 +511,9 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 cb1.setText(bigNametemp[0]);
                 cb2.setText(bigNametemp[1]);
                 cb3.setText(bigNametemp[2]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
                 cb2.setVisibility(View.VISIBLE);
@@ -470,6 +524,10 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 cb2.setText(bigNametemp[1]);
                 cb3.setText(bigNametemp[2]);
                 cb4.setText(bigNametemp[3]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -485,6 +543,11 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 cb3.setText(bigNametemp[2]);
                 cb4.setText(bigNametemp[3]);
                 cb5.setText(bigNametemp[4]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -501,6 +564,12 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 cb4.setText(bigNametemp[3]);
                 cb5.setText(bigNametemp[4]);
                 cb6.setText(bigNametemp[5]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -518,6 +587,13 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 cb5.setText(bigNametemp[4]);
                 cb6.setText(bigNametemp[5]);
                 cb7.setText(bigNametemp[6]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
+                cb7.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 ll5.setVisibility(View.VISIBLE);
@@ -538,6 +614,14 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 cb6.setText(bigNametemp[5]);
                 cb7.setText(bigNametemp[6]);
                 cb8.setText(bigNametemp[7]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
+                cb7.setChecked(true);
+                cb8.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 ll5.setVisibility(View.VISIBLE);
@@ -560,6 +644,15 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 cb7.setText(bigNametemp[6]);
                 cb8.setText(bigNametemp[7]);
                 cb9.setText(bigNametemp[8]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
+                cb7.setChecked(true);
+                cb8.setChecked(true);
+                cb9.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 ll5.setVisibility(View.VISIBLE);
@@ -577,9 +670,28 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
         ProgressDialogUtil.stopLoad();
     }
 
-    @OnClick({R.id.btnUp, R.id.tvDerper, R.id.btnT, R.id.btnHistory})
+    @OnClick({R.id.btnUp, R.id.tvDerper, R.id.btnT, R.id.btnHistory, R.id.llShenPiRen})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.llShenPiRen:
+                if (btnT.getVisibility() == View.VISIBLE) {
+                    if (btnTTag.equals("N")) {
+                        Toast.makeText(this, "请点击加号选择路径", Toast.LENGTH_SHORT).show();
+                    } else {
+                        if (llShenPiRenList.getVisibility() == View.VISIBLE) {
+                            llShenPiRenList.setVisibility(View.GONE);
+                        } else {
+                            llShenPiRenList.setVisibility(View.VISIBLE);
+                        }
+                    }
+                } else {
+                    if (llShenPiRenList.getVisibility() == View.VISIBLE) {
+                        llShenPiRenList.setVisibility(View.GONE);
+                    } else {
+                        llShenPiRenList.setVisibility(View.VISIBLE);
+                    }
+                }
+                break;
             case R.id.btnHistory:
                 recyclerView.setVisibility(View.VISIBLE);
                 ProgressDialogUtil.startLoad(FlowRepairWillDetailActivity.this, "获取数据中");
@@ -601,6 +713,7 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                 break;
             case R.id.btnT:
                 btnTTag = "Y";
+                llShenPiRenList.setVisibility(View.VISIBLE);
                 if (beanList.size() != 0) {
                     if (beanList.size() == 1) {
                         ProgressDialogUtil.startLoad(FlowRepairWillDetailActivity.this, "获取数据中");
@@ -630,6 +743,7 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                             public void oneselect(final String data) {
                                 ProgressDialogUtil.startLoad(FlowRepairWillDetailActivity.this, "获取数据中");
                                 destName = data;
+                                tvspr.setText(destName);
                                 for (int i = 0; i < beanList.size(); i++) {
                                     if (destName.equals(beanList.get(i).getDestination())) {
                                         signaName = beanList.get(i).getName();
@@ -1252,7 +1366,7 @@ public class FlowRepairWillDetailActivity extends BaseActivity {
                         }
                     } else {
                         ProgressDialogUtil.stopLoad();
-                        Toast.makeText(FlowRepairWillDetailActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FlowRepairWillDetailActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                         finish();
                     }
                     break;

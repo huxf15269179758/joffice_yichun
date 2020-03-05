@@ -162,6 +162,12 @@ public class FlowAssessWillDetailActivity extends BaseActivity {
     EditText etLeaderNumW;
     @BindView(R.id.tvDepartment)
     TextView tvDepartment;
+    @BindView(R.id.tvspr)
+    TextView tvspr;
+    @BindView(R.id.llShenPiRen)
+    LinearLayout llShenPiRen;
+    @BindView(R.id.llShenPiRenList)
+    LinearLayout llShenPiRenList;
     private String name, taskId, res, fullnameUId, fullname, jsbmyj, cwsjbyj, xxjsbyj, ygbh, cctkjyxgsyj, flowAssignld;
     private String mainId, signaName, destName, destType, checkTask = "", qianzhiData = "";
     String leader = "";
@@ -380,6 +386,22 @@ public class FlowAssessWillDetailActivity extends BaseActivity {
     private void setCbRbVer() {
         resultList.clear();
         bigResultList.clear();
+        ll1.setVisibility(View.GONE);
+        ll2.setVisibility(View.GONE);
+        ll3.setVisibility(View.GONE);
+        ll4.setVisibility(View.GONE);
+        rb1.setChecked(false);
+        rb2.setChecked(false);
+        rb3.setChecked(false);
+        rb4.setChecked(false);
+        rb5.setChecked(false);
+        rb6.setChecked(false);
+        cb1.setChecked(false);
+        cb2.setChecked(false);
+        cb3.setChecked(false);
+        cb4.setChecked(false);
+        cb5.setChecked(false);
+        cb6.setChecked(false);
         if (nametemp != null) {
             if (nametemp.length == 1) {
                 rb1.setText(nametemp[0]);
@@ -536,9 +558,28 @@ public class FlowAssessWillDetailActivity extends BaseActivity {
         ProgressDialogUtil.stopLoad();
     }
 
-    @OnClick({R.id.btnUp, R.id.tvData, R.id.btnT, R.id.btnHistory})
+    @OnClick({R.id.btnUp, R.id.tvData, R.id.btnT, R.id.btnHistory, R.id.llShenPiRen})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.llShenPiRen:
+                if (btnT.getVisibility() == View.VISIBLE) {
+                    if (btnTTag.equals("N")) {
+                        Toast.makeText(this, "请点击加号选择路径", Toast.LENGTH_SHORT).show();
+                    } else {
+                        if (llShenPiRenList.getVisibility() == View.VISIBLE) {
+                            llShenPiRenList.setVisibility(View.GONE);
+                        } else {
+                            llShenPiRenList.setVisibility(View.VISIBLE);
+                        }
+                    }
+                } else {
+                    if (llShenPiRenList.getVisibility() == View.VISIBLE) {
+                        llShenPiRenList.setVisibility(View.GONE);
+                    } else {
+                        llShenPiRenList.setVisibility(View.VISIBLE);
+                    }
+                }
+                break;
             case R.id.btnHistory:
                 recyclerView.setVisibility(View.VISIBLE);
                 ProgressDialogUtil.startLoad(FlowAssessWillDetailActivity.this, "获取数据中");
@@ -560,6 +601,7 @@ public class FlowAssessWillDetailActivity extends BaseActivity {
                 break;
             case R.id.btnT:
                 btnTTag = "Y";
+                llShenPiRenList.setVisibility(View.VISIBLE);
                 if (beanList.size() != 0) {
                     if (beanList.size() == 1) {
                         ProgressDialogUtil.startLoad(FlowAssessWillDetailActivity.this, "获取数据中");
@@ -589,6 +631,7 @@ public class FlowAssessWillDetailActivity extends BaseActivity {
                             public void oneselect(final String data) {
                                 ProgressDialogUtil.startLoad(FlowAssessWillDetailActivity.this, "获取数据中");
                                 destName = data;
+                                tvspr.setText(destName);
                                 for (int i = 0; i < beanList.size(); i++) {
                                     if (destName.equals(beanList.get(i).getDestination())) {
                                         signaName = beanList.get(i).getName();
@@ -995,9 +1038,9 @@ public class FlowAssessWillDetailActivity extends BaseActivity {
                     }
                     String url = Constant.BASE_URL2 + Constant.EXAMINEDATA;
                     DBHandler dbA = new DBHandler();
-                    upData = dbA.OAWillAssessLeader(url, person, phone, idCard, sex,department
-                            , userCode, destName, taskId, flowAssignld, mainId,jsbmyj, cwsjbyj
-                            , xxjsbyj, cctkjyxgsyj, ygbh, comment, signaName,carType );
+                    upData = dbA.OAWillAssessLeader(url, person, phone, idCard, sex, department
+                            , userCode, destName, taskId, flowAssignld, mainId, jsbmyj, cwsjbyj
+                            , xxjsbyj, cctkjyxgsyj, ygbh, comment, signaName, carType);
                     if (upData.equals("")) {
                         handler.sendEmptyMessage(TAG_THERE);
                     } else {
@@ -1146,7 +1189,7 @@ public class FlowAssessWillDetailActivity extends BaseActivity {
                             etLeader3.setVisibility(View.GONE);
                             tvLeader3W.setTextColor(getResources().getColor(R.color.order_stop_black));
                         }
-                        if (jsbmreout.equals("1") && cwreout.equals("1") &&xxreout.equals("1") && cctreout.equals("1") ) {
+                        if (jsbmreout.equals("1") && cwreout.equals("1") && xxreout.equals("1") && cctreout.equals("1")) {
                             Toast.makeText(FlowAssessWillDetailActivity.this, "您对当前流程只有读取权限", Toast.LENGTH_SHORT).show();
                         }
                     } catch (JSONException e) {

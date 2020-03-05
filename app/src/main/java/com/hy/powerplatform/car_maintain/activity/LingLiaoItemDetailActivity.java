@@ -141,10 +141,10 @@ public class LingLiaoItemDetailActivity extends BaseActivity {
                     }
                     break;
                 case Constant.TAG_TWO:
-                    Toast.makeText(LingLiaoItemDetailActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LingLiaoItemDetailActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     break;
                 case Constant.TAG_THERE:
-                    Toast.makeText(LingLiaoItemDetailActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LingLiaoItemDetailActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     break;
             }
         }

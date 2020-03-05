@@ -1,6 +1,9 @@
 package com.hy.powerplatform.login.activity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -82,6 +85,9 @@ public class LoginActivity extends BaseActivity implements LoginView {
     ScrollView scrollView;
     @BindView(R.id.activity_login)
     LinearLayout activityLogin;
+
+    ConnectivityManager mConnectivityManager;
+    NetworkInfo mNetworkInfo  ;
 
     //推出程序
     @Override
@@ -193,6 +199,8 @@ public class LoginActivity extends BaseActivity implements LoginView {
                 startActivity(intent);
                 break;
             case R.id.btn_Login:
+                mConnectivityManager = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
+                mNetworkInfo  = mConnectivityManager.getActiveNetworkInfo();
                 userName1 = etLoginName.getText().toString().trim();
                 userPassword1 = etLoginPassword.getText().toString().trim();
                 String Ip = sharedPreferencesHelper.getData(this, "Ip", "");
@@ -200,8 +208,13 @@ public class LoginActivity extends BaseActivity implements LoginView {
                 String Found = sharedPreferencesHelper.getData(this, "Found", "");
                 if (Ip.equals("") && Socket.equals("")) {
                     Toast.makeText(this, getResources().getString(R.string.toast_infor), Toast.LENGTH_SHORT).show();
+                    break;
                 } else if (userName1.equals("") && userPassword1.equals("")) {
                     alertDialogUtil.showSmallDialog(getResources().getString(R.string.toast_login_infor));
+                    break;
+                } else if(mNetworkInfo == null){
+                    Toast.makeText(this, "请检查网络", Toast.LENGTH_SHORT).show();
+                    break;
                 } else {
                     //final String url1 = "http://"+Ip+":"+Socket+"/"+Found+"/"+"mobile.do"+"?username="+userName1+"&password="+userPassword1;
                     String url1 = null;
@@ -331,7 +344,7 @@ public class LoginActivity extends BaseActivity implements LoginView {
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
             hideLoading();
-            Toast.makeText(LoginActivity.this, "账号异常", Toast.LENGTH_SHORT).show();
+            Toast.makeText(LoginActivity.this, "登录异常 请重试", Toast.LENGTH_SHORT).show();
         }
     };
 

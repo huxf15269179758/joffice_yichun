@@ -40,7 +40,6 @@ public abstract class CommonAdapter<T> extends RecyclerView.Adapter<CommonViewHo
     public CommonViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = mLayoutInflater.inflate(mLayoutId, parent, false);
         CommonViewHolder holder = new CommonViewHolder(itemView);
-        //获取可滑动的view布局
         LinearLayout moveLayout = holder.getView(R.id.id_move_layout);
         moveLayout.scrollTo(mFixX, 0);
         mMoveViewList.add(moveLayout);

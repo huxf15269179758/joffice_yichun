@@ -314,7 +314,7 @@ public class FlowOutMessageDetailActivity extends BaseActivity {
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_TWO:
-                    Toast.makeText(FlowOutMessageDetailActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FlowOutMessageDetailActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_NINE:

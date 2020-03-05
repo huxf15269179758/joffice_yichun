@@ -272,11 +272,11 @@ public class SelectDataActivity extends BaseActivity implements SelectDataAdapte
                     ProgressDialogUtil.stopLoad();
                     break;
                 case Constant.TAG_TWO:
-                    Toast.makeText(SelectDataActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SelectDataActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     ProgressDialogUtil.stopLoad();
                     break;
                 case Constant.TAG_THERE:
-                    Toast.makeText(SelectDataActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SelectDataActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     ProgressDialogUtil.stopLoad();
                     break;
 

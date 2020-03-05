@@ -537,7 +537,7 @@ public class MyWillDoActivity extends BaseActivity implements MyWillDoAdapter.On
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_TWO:
-                    Toast.makeText(MyWillDoActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MyWillDoActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_THERE:

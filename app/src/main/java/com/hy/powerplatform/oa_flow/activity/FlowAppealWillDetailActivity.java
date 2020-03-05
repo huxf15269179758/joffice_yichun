@@ -433,6 +433,8 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
             if (nametemp.length == 2) {
                 rb1.setText(nametemp[0]);
                 rb2.setText(nametemp[1]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
                 rb2.setVisibility(View.VISIBLE);
@@ -442,6 +444,9 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 rb1.setText(nametemp[0]);
                 rb2.setText(nametemp[1]);
                 rb3.setText(nametemp[2]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
                 rb2.setVisibility(View.VISIBLE);
@@ -452,6 +457,10 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 rb2.setText(nametemp[1]);
                 rb3.setText(nametemp[2]);
                 rb4.setText(nametemp[3]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
+                rb4.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 ll4.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
@@ -467,6 +476,11 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 rb3.setText(nametemp[2]);
                 rb4.setText(nametemp[3]);
                 rb5.setText(nametemp[4]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
+                rb4.setChecked(true);
+                rb5.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 ll4.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
@@ -483,6 +497,12 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 rb4.setText(nametemp[3]);
                 rb5.setText(nametemp[4]);
                 rb6.setText(nametemp[5]);
+                rb1.setChecked(true);
+                rb2.setChecked(true);
+                rb3.setChecked(true);
+                rb4.setChecked(true);
+                rb5.setChecked(true);
+                rb6.setChecked(true);
                 ll3.setVisibility(View.VISIBLE);
                 ll4.setVisibility(View.VISIBLE);
                 rb1.setVisibility(View.VISIBLE);
@@ -507,6 +527,8 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
             if (bigNametemp.length == 2) {
                 cb1.setText(bigNametemp[0]);
                 cb2.setText(bigNametemp[1]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
                 cb2.setVisibility(View.VISIBLE);
@@ -516,6 +538,9 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 cb1.setText(bigNametemp[0]);
                 cb2.setText(bigNametemp[1]);
                 cb3.setText(bigNametemp[2]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
                 cb2.setVisibility(View.VISIBLE);
@@ -526,6 +551,10 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 cb2.setText(bigNametemp[1]);
                 cb3.setText(bigNametemp[2]);
                 cb4.setText(bigNametemp[3]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -541,6 +570,11 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 cb3.setText(bigNametemp[2]);
                 cb4.setText(bigNametemp[3]);
                 cb5.setText(bigNametemp[4]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -557,6 +591,12 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 cb4.setText(bigNametemp[3]);
                 cb5.setText(bigNametemp[4]);
                 cb6.setText(bigNametemp[5]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 cb1.setVisibility(View.VISIBLE);
@@ -574,6 +614,13 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 cb5.setText(bigNametemp[4]);
                 cb6.setText(bigNametemp[5]);
                 cb7.setText(bigNametemp[6]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
+                cb7.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 ll5.setVisibility(View.VISIBLE);
@@ -594,6 +641,14 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 cb6.setText(bigNametemp[5]);
                 cb7.setText(bigNametemp[6]);
                 cb8.setText(bigNametemp[7]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
+                cb7.setChecked(true);
+                cb8.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 ll5.setVisibility(View.VISIBLE);
@@ -616,6 +671,15 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 cb7.setText(bigNametemp[6]);
                 cb8.setText(bigNametemp[7]);
                 cb9.setText(bigNametemp[8]);
+                cb1.setChecked(true);
+                cb2.setChecked(true);
+                cb3.setChecked(true);
+                cb4.setChecked(true);
+                cb5.setChecked(true);
+                cb6.setChecked(true);
+                cb7.setChecked(true);
+                cb8.setChecked(true);
+                cb9.setChecked(true);
                 ll1.setVisibility(View.VISIBLE);
                 ll2.setVisibility(View.VISIBLE);
                 ll5.setVisibility(View.VISIBLE);
@@ -700,6 +764,7 @@ public class FlowAppealWillDetailActivity extends BaseActivity {
                 break;
             case R.id.btnT:
                 btnTTag = "Y";
+                llShenPiRenList.setVisibility(View.VISIBLE);
                 if (beanList.size() != 0) {
                     if (beanList.size() == 1) {
                         ProgressDialogUtil.startLoad(FlowAppealWillDetailActivity.this, "获取数据中");

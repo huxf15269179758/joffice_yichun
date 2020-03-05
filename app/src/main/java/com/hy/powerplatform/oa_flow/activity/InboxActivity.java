@@ -89,7 +89,7 @@ public class InboxActivity extends BaseActivity {
                     break;
                 case TAG_TWO:
                     ProgressDialogUtil.stopLoad();
-                    Toast.makeText(InboxActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(InboxActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     break;
             }
         }

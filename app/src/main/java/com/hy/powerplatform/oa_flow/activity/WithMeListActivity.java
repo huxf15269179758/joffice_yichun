@@ -387,7 +387,7 @@ public class WithMeListActivity extends BaseActivity implements WithMeListAdapte
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_TWO:
-                    Toast.makeText(WithMeListActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(WithMeListActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     ProgressDialogUtil.stopLoad();
                     break;
                 case TAG_THERE:

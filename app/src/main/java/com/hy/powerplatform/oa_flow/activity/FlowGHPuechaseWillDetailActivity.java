@@ -223,6 +223,12 @@ public class FlowGHPuechaseWillDetailActivity extends BaseActivity {
     TextView tvLeader1W;
     @BindView(R.id.tvLeader2W)
     TextView tvLeader2W;
+    @BindView(R.id.tvspr)
+    TextView tvspr;
+    @BindView(R.id.llShenPiRen)
+    LinearLayout llShenPiRen;
+    @BindView(R.id.llShenPiRenList)
+    LinearLayout llShenPiRenList;
     private String name, taskId, res, bmfzryj, zcgkbmyj = "", fgldyj, ghzx = "", zjl = "";
     private String mainId, signaName, destName, destType, checkTask, qianzhiData = "";
     String leader = "";
@@ -1515,7 +1521,7 @@ public class FlowGHPuechaseWillDetailActivity extends BaseActivity {
                 case TAG_ONE:
                     Gson gson = new Gson();
                     if (res.equals("false")) {
-                        Toast.makeText(FlowGHPuechaseWillDetailActivity.this, "获取数据失败", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FlowGHPuechaseWillDetailActivity.this, "获取数据失败，请重试", Toast.LENGTH_SHORT).show();
                     } else {
                         FlowGHWillPurchase bean = gson.fromJson(res, FlowGHWillPurchase.class);
                         taskId = bean.getTaskId();
